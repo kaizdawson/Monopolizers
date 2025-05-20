@@ -1,6 +1,0 @@
-@Monopolizers_HostAddress = http://localhost:5289
-
-GET {{Monopolizers_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
