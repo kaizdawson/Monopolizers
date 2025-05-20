@@ -4,8 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using Monopolizers.DB;
-using Monopolizers.Repositories;
+using Monopolizers.Repository.DB;
+using Monopolizers.Repository.Repositories;
 using System.Security.Claims;
 using System.Text;
 

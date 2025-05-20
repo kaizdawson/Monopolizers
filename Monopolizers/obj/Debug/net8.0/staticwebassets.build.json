@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "L8zEH6qmTyVx83koUJyqOot+BqCQQIUCFB9ghBak6wo=",
-  "Source": "Monopolizers",
-  "BasePath": "_content/Monopolizers",
+  "Hash": "HlmGg0Z/54cUlzbWKitUL11tjFwdbzlcaQJZ8AwoPMM=",
+  "Source": "Monopolizers.API",
+  "BasePath": "_content/Monopolizers.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

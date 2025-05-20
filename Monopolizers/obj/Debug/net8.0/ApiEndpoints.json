@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "signInModel",
-        "Type": "Monopolizers.Models.SignInModel",
+        "Type": "Monopolizers.Repository.Models.SignInModel",
         "IsRequired": true
       }
     ],
@@ -25,7 +25,7 @@
     "Parameters": [
       {
         "Name": "signUpModel",
-        "Type": "Monopolizers.Models.SignUpModel",
+        "Type": "Monopolizers.Repository.Models.SignUpModel",
         "IsRequired": true
       }
     ],
