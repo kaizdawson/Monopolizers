@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Monopolizers.Models;
-using Monopolizers.Repositories;
+using Monopolizers.Repository.Models;
+using Monopolizers.Repository.Repositories;
 
 namespace Monopolizers.Controllers
 {
