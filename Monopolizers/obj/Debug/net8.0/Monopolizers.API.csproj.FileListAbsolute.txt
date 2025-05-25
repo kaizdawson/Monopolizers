@@ -1,10 +1,3 @@
-C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\Monopolizers.API.csproj.AssemblyReference.cache
-C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\Monopolizers.API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\Monopolizers.API.AssemblyInfoInputs.cache
-C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\Monopolizers.API.AssemblyInfo.cs
-C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\Monopolizers.API.csproj.CoreCompileInputs.cache
-C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\Monopolizers.API.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\Monopolizers.API.sourcelink.json
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\appsettings.json
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\Monopolizers.API.staticwebassets.endpoints.json
@@ -74,6 +67,14 @@ C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\Monopolize
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\Monopolizers.Service.dll
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\Monopolizers.Service.pdb
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\Monopolizers.Repository.pdb
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\Monopolizers.API.csproj.AssemblyReference.cache
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\Monopolizers.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\Monopolizers.API.AssemblyInfoInputs.cache
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\Monopolizers.API.AssemblyInfo.cs
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\Monopolizers.API.csproj.CoreCompileInputs.cache
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\Monopolizers.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\Monopolizers.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\Monopolizers.API.sourcelink.json
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\scopedcss\bundle\Monopolizers.API.styles.css
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\staticwebassets.development.json
@@ -84,10 +85,10 @@ C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\staticweba
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Monopolizers.API.props
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Monopolizers.API.props
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\Monopoli.B41F83E2.Up2Date
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\Monopolizers.API.dll
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\refint\Monopolizers.API.dll
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\Monopolizers.API.pdb
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\Monopolizers.API.genruntimeconfig.cache
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\ref\Monopolizers.API.dll
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
