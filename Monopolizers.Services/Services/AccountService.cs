@@ -34,7 +34,7 @@ namespace Monopolizers.Service.Services
                 FirstName = model.FirstName,
                 LastName = model.LastName,
                 PhoneNumber = model.PhoneNumber,
-                RoleId = 1 //Customer
+                RoleId = 2 //Customer
             };
 
             var result = await _userManager.CreateAsync(user, model.Password);
