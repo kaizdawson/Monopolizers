@@ -6,6 +6,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Monopolizers.Repository.DB;
 using Monopolizers.Repository.Repositories;
+using Monopolizers.Service.Services;
 using System.Security.Claims;
 using System.Text;
 
@@ -22,6 +23,7 @@ builder.Services.AddCors(options => options.AddDefaultPolicy(policy => policy.Al
 
 builder.Services.AddDbContext<CardARContext>(options => { options.UseSqlServer(builder.Configuration.GetConnectionString("Monopolizers")); });
 
+builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 
 builder.Services.AddAuthentication(options =>

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Monopolizers.Repository.Models;
 using Monopolizers.Repository.Repositories;
+using Monopolizers.Service.Services;
 
 namespace Monopolizers.Controllers
 {
@@ -10,12 +11,13 @@ namespace Monopolizers.Controllers
     [ApiController]
     public class AccountController : ControllerBase
     {
-        private readonly IAccountRepository AccountRepository;
+        private readonly IAccountService _accountService;
 
-        public AccountController(IAccountRepository repo)
+        public AccountController(IAccountService accountService)
         {
-            AccountRepository = repo;
+            _accountService = accountService;
         }
+
         [AllowAnonymous]
         [HttpPost("SignUp")]
         public async Task<IActionResult> SignUp(SignUpModel signUpModel)
@@ -30,7 +32,7 @@ namespace Monopolizers.Controllers
                 return BadRequest(new { message = firstError });
             }
 
-            var result = await AccountRepository.SignUpAsync(signUpModel);
+            var result = await _accountService.SignUpAsync(signUpModel);
             if (result.Succeeded)
             {
                 return Ok(new { message = "Đăng ký thành công!" });
@@ -44,16 +46,15 @@ namespace Monopolizers.Controllers
         [HttpPost("SignIn")]
         public async Task<IActionResult> SignIn(SignInModel signInModel)
         {
-            var result = await AccountRepository.SignInAsync(signInModel);
+            var result = await _accountService.SignInAsync(signInModel);
 
             if (result == "Không tìm thấy tài khoản này!" || result == "Sai Mật Khẩu")
             {
                 return Unauthorized(new { message = result });
             }
 
-            // Trường hợp thành công, trả về token
             return Ok(new { token = result });
         }
-
     }
+
 }

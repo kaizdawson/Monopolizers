@@ -155,7 +155,7 @@ namespace Monopolizers.Repository.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Monopolizers.DB.ApplicationUser", b =>
+            modelBuilder.Entity("Monopolizers.Repository.DB.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -205,6 +205,12 @@ namespace Monopolizers.Repository.Migrations
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<int?>("PricingPlansId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
@@ -214,6 +220,9 @@ namespace Monopolizers.Repository.Migrations
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
+
+                    b.Property<int?>("WalletId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -225,10 +234,246 @@ namespace Monopolizers.Repository.Migrations
                         .HasDatabaseName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
+                    b.HasIndex("PricingPlansId");
+
+                    b.HasIndex("RoleId");
+
+                    b.HasIndex("WalletId")
+                        .IsUnique()
+                        .HasFilter("[WalletId] IS NOT NULL");
+
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("Monopolizers.DB.Card", b =>
+            modelBuilder.Entity("Monopolizers.Repository.DB.Asset", b =>
+                {
+                    b.Property<int>("AssetId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AssetId"));
+
+                    b.Property<string>("AccessLevel")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AssetType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SourceUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UploadedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("AssetId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Asset");
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.Card", b =>
+                {
+                    b.Property<int>("CardId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CardId"));
+
+                    b.Property<string>("ARVideoUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AccessLevel")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AvtImgUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Category")
+                        .HasColumnType("int");
+
+                    b.Property<string>("DefaultData")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<int>("TypeId")
+                        .HasColumnType("int");
+
+                    b.HasKey("CardId");
+
+                    b.HasIndex("TypeId");
+
+                    b.ToTable("Card");
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.Design", b =>
+                {
+                    b.Property<int>("DesignId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DesignId"));
+
+                    b.Property<int>("CardId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DesignData")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DesignName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PreviewImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("DesignId");
+
+                    b.HasIndex("CardId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Design");
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.Invite", b =>
+                {
+                    b.Property<int>("InviteId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("InviteId"));
+
+                    b.Property<int>("DesignId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("EmailReceiver")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("QrCodeUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("SentAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("InviteId");
+
+                    b.HasIndex("DesignId");
+
+                    b.ToTable("Invite");
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.PlanPurchase", b =>
+                {
+                    b.Property<int>("PurchaseId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PurchaseId"));
+
+                    b.Property<DateTime>("ExpiredAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("PlanId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("PurchasedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("PurchaseId");
+
+                    b.HasIndex("PlanId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("PlanPurchase");
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.PricingPlans", b =>
+                {
+                    b.Property<int>("PlanId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PlanId"));
+
+                    b.Property<string>("AccessLevel")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("SupportAR")
+                        .HasColumnType("bit");
+
+                    b.HasKey("PlanId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("PricingPlans");
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.Role", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -236,23 +481,100 @@ namespace Monopolizers.Repository.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<double>("Price")
-                        .HasColumnType("float");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Title")
+                    b.Property<string>("RoleName")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Cards");
+                    b.ToTable("Role");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            RoleName = "Admin"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            RoleName = "Customer"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            RoleName = "Manager"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            RoleName = "Staff"
+                        });
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.TypeCard", b =>
+                {
+                    b.Property<int>("TypeId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TypeId"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("TypeId");
+
+                    b.ToTable("TypeCard");
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.Wallet", b =>
+                {
+                    b.Property<int>("WalletId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("WalletId"));
+
+                    b.Property<decimal>("Balance")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("WalletId");
+
+                    b.ToTable("Wallet");
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.WalletTransaction", b =>
+                {
+                    b.Property<int>("TransactionId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TransactionId"));
+
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("WalletId")
+                        .HasColumnType("int");
+
+                    b.HasKey("TransactionId");
+
+                    b.HasIndex("WalletId");
+
+                    b.ToTable("WalletTransaction");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -266,7 +588,7 @@ namespace Monopolizers.Repository.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("Monopolizers.DB.ApplicationUser", null)
+                    b.HasOne("Monopolizers.Repository.DB.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -275,7 +597,7 @@ namespace Monopolizers.Repository.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("Monopolizers.DB.ApplicationUser", null)
+                    b.HasOne("Monopolizers.Repository.DB.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -290,7 +612,7 @@ namespace Monopolizers.Repository.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Monopolizers.DB.ApplicationUser", null)
+                    b.HasOne("Monopolizers.Repository.DB.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -299,11 +621,175 @@ namespace Monopolizers.Repository.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("Monopolizers.DB.ApplicationUser", null)
+                    b.HasOne("Monopolizers.Repository.DB.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.ApplicationUser", b =>
+                {
+                    b.HasOne("Monopolizers.Repository.DB.PricingPlans", "PricingPlans")
+                        .WithMany("Users")
+                        .HasForeignKey("PricingPlansId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+                    b.HasOne("Monopolizers.Repository.DB.Role", "Role")
+                        .WithMany("Users")
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("Monopolizers.Repository.DB.Wallet", "Wallet")
+                        .WithOne("User")
+                        .HasForeignKey("Monopolizers.Repository.DB.ApplicationUser", "WalletId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.Navigation("PricingPlans");
+
+                    b.Navigation("Role");
+
+                    b.Navigation("Wallet");
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.Asset", b =>
+                {
+                    b.HasOne("Monopolizers.Repository.DB.ApplicationUser", "User")
+                        .WithMany("Assets")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.Card", b =>
+                {
+                    b.HasOne("Monopolizers.Repository.DB.TypeCard", "Type")
+                        .WithMany("Cards")
+                        .HasForeignKey("TypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Type");
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.Design", b =>
+                {
+                    b.HasOne("Monopolizers.Repository.DB.Card", "Card")
+                        .WithMany("Designs")
+                        .HasForeignKey("CardId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Monopolizers.Repository.DB.ApplicationUser", "User")
+                        .WithMany("Designs")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("Card");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.Invite", b =>
+                {
+                    b.HasOne("Monopolizers.Repository.DB.Design", "Design")
+                        .WithMany("Invites")
+                        .HasForeignKey("DesignId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Design");
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.PlanPurchase", b =>
+                {
+                    b.HasOne("Monopolizers.Repository.DB.PricingPlans", "Plan")
+                        .WithMany("PlanPurchases")
+                        .HasForeignKey("PlanId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Monopolizers.Repository.DB.ApplicationUser", "User")
+                        .WithMany("PlanPurchases")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("Plan");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.PricingPlans", b =>
+                {
+                    b.HasOne("Monopolizers.Repository.DB.Role", "Role")
+                        .WithMany("PricingPlans")
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.WalletTransaction", b =>
+                {
+                    b.HasOne("Monopolizers.Repository.DB.Wallet", "Wallet")
+                        .WithMany("WalletTransactions")
+                        .HasForeignKey("WalletId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Wallet");
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.ApplicationUser", b =>
+                {
+                    b.Navigation("Assets");
+
+                    b.Navigation("Designs");
+
+                    b.Navigation("PlanPurchases");
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.Card", b =>
+                {
+                    b.Navigation("Designs");
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.Design", b =>
+                {
+                    b.Navigation("Invites");
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.PricingPlans", b =>
+                {
+                    b.Navigation("PlanPurchases");
+
+                    b.Navigation("Users");
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.Role", b =>
+                {
+                    b.Navigation("PricingPlans");
+
+                    b.Navigation("Users");
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.TypeCard", b =>
+                {
+                    b.Navigation("Cards");
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.Wallet", b =>
+                {
+                    b.Navigation("User")
+                        .IsRequired();
+
+                    b.Navigation("WalletTransactions");
                 });
 #pragma warning restore 612, 618
         }
