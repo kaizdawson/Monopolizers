@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Monopolizers.Common/1.0.0": {
+        "runtime": {
+          "Monopolizers.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Monopolizers.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

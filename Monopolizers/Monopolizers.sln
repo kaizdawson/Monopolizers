@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monopolizers.Service", "..\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monopolizers.Repository", "..\Monopolizers.Repositories\Monopolizers.Repository.csproj", "{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monopolizers.Common", "..\Monopolizers.Common\Monopolizers.Common.csproj", "{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +29,15 @@ Global
 		{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D91196D5-6E66-4C9F-9BE0-A017BFA3988D}
 	EndGlobalSection
 EndGlobal

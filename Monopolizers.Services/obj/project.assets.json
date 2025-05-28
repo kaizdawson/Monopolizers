@@ -855,6 +855,19 @@
           }
         }
       },
+      "System.Linq.Dynamic.Core/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Linq.Dynamic.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Linq.Dynamic.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "System.Memory/4.5.4": {
         "type": "package",
         "compile": {
@@ -1134,6 +1147,16 @@
           }
         }
       },
+      "Monopolizers.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Monopolizers.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Monopolizers.Common.dll": {}
+        }
+      },
       "Monopolizers.Repository/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -1143,7 +1166,9 @@
           "Microsoft.AspNetCore.OpenApi": "8.0.16",
           "Microsoft.EntityFrameworkCore": "8.0.16",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.16",
-          "Swashbuckle.AspNetCore": "6.6.2"
+          "Monopolizers.Common": "1.0.0",
+          "Swashbuckle.AspNetCore": "6.6.2",
+          "System.Linq.Dynamic.Core": "1.6.4"
         },
         "compile": {
           "bin/placeholder/Monopolizers.Repository.dll": {}
@@ -2557,6 +2582,68 @@
         "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
+    "System.Linq.Dynamic.Core/1.6.4": {
+      "sha512": "8+/9Iux+i/IJ9L4FdwGM7ilMCeif3cKw8iB4dXgCBtn67fkr7KuXEGTc05d52tgaUQpnmNr4TIFscmyiKWL84g==",
+      "type": "package",
+      "path": "system.linq.dynamic.core/1.6.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "PackageReadme.md",
+        "lib/net35/System.Linq.Dynamic.Core.dll",
+        "lib/net35/System.Linq.Dynamic.Core.pdb",
+        "lib/net35/System.Linq.Dynamic.Core.xml",
+        "lib/net40/System.Linq.Dynamic.Core.dll",
+        "lib/net40/System.Linq.Dynamic.Core.pdb",
+        "lib/net40/System.Linq.Dynamic.Core.xml",
+        "lib/net45/System.Linq.Dynamic.Core.dll",
+        "lib/net45/System.Linq.Dynamic.Core.pdb",
+        "lib/net45/System.Linq.Dynamic.Core.xml",
+        "lib/net452/System.Linq.Dynamic.Core.dll",
+        "lib/net452/System.Linq.Dynamic.Core.pdb",
+        "lib/net452/System.Linq.Dynamic.Core.xml",
+        "lib/net46/System.Linq.Dynamic.Core.dll",
+        "lib/net46/System.Linq.Dynamic.Core.pdb",
+        "lib/net46/System.Linq.Dynamic.Core.xml",
+        "lib/net5.0/System.Linq.Dynamic.Core.dll",
+        "lib/net5.0/System.Linq.Dynamic.Core.pdb",
+        "lib/net5.0/System.Linq.Dynamic.Core.xml",
+        "lib/net6.0/System.Linq.Dynamic.Core.dll",
+        "lib/net6.0/System.Linq.Dynamic.Core.pdb",
+        "lib/net6.0/System.Linq.Dynamic.Core.xml",
+        "lib/net7.0/System.Linq.Dynamic.Core.dll",
+        "lib/net7.0/System.Linq.Dynamic.Core.pdb",
+        "lib/net7.0/System.Linq.Dynamic.Core.xml",
+        "lib/net8.0/System.Linq.Dynamic.Core.dll",
+        "lib/net8.0/System.Linq.Dynamic.Core.pdb",
+        "lib/net8.0/System.Linq.Dynamic.Core.xml",
+        "lib/net9.0/System.Linq.Dynamic.Core.dll",
+        "lib/net9.0/System.Linq.Dynamic.Core.pdb",
+        "lib/net9.0/System.Linq.Dynamic.Core.xml",
+        "lib/netcoreapp2.1/System.Linq.Dynamic.Core.dll",
+        "lib/netcoreapp2.1/System.Linq.Dynamic.Core.pdb",
+        "lib/netcoreapp2.1/System.Linq.Dynamic.Core.xml",
+        "lib/netcoreapp3.1/System.Linq.Dynamic.Core.dll",
+        "lib/netcoreapp3.1/System.Linq.Dynamic.Core.pdb",
+        "lib/netcoreapp3.1/System.Linq.Dynamic.Core.xml",
+        "lib/netstandard1.3/System.Linq.Dynamic.Core.dll",
+        "lib/netstandard1.3/System.Linq.Dynamic.Core.pdb",
+        "lib/netstandard1.3/System.Linq.Dynamic.Core.xml",
+        "lib/netstandard2.0/System.Linq.Dynamic.Core.dll",
+        "lib/netstandard2.0/System.Linq.Dynamic.Core.pdb",
+        "lib/netstandard2.0/System.Linq.Dynamic.Core.xml",
+        "lib/netstandard2.1/System.Linq.Dynamic.Core.dll",
+        "lib/netstandard2.1/System.Linq.Dynamic.Core.pdb",
+        "lib/netstandard2.1/System.Linq.Dynamic.Core.xml",
+        "lib/uap10.0.10240/System.Linq.Dynamic.Core.dll",
+        "lib/uap10.0.10240/System.Linq.Dynamic.Core.pdb",
+        "lib/uap10.0.10240/System.Linq.Dynamic.Core.pri",
+        "lib/uap10.0.10240/System.Linq.Dynamic.Core.xml",
+        "logo.png",
+        "system.linq.dynamic.core.1.6.4.nupkg.sha512",
+        "system.linq.dynamic.core.nuspec"
+      ]
+    },
     "System.Memory/4.5.4": {
       "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
       "type": "package",
@@ -3084,6 +3171,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Monopolizers.Common/1.0.0": {
+      "type": "project",
+      "path": "../Monopolizers.Common/Monopolizers.Common.csproj",
+      "msbuildProject": "../Monopolizers.Common/Monopolizers.Common.csproj"
+    },
     "Monopolizers.Repository/1.0.0": {
       "type": "project",
       "path": "../Monopolizers.Repositories/Monopolizers.Repository.csproj",
@@ -3092,27 +3184,28 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Monopolizers.Common >= 1.0.0",
       "Monopolizers.Repository >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Khoa\\.nuget\\packages\\": {},
+    "C:\\Users\\tuan0\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Monopolizers.Service.csproj",
+      "projectUniqueName": "D:\\EXE202\\New folder\\Monopolizers.Services\\Monopolizers.Service.csproj",
       "projectName": "Monopolizers.Service",
-      "projectPath": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Monopolizers.Service.csproj",
-      "packagesPath": "C:\\Users\\Khoa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\obj\\",
+      "projectPath": "D:\\EXE202\\New folder\\Monopolizers.Services\\Monopolizers.Service.csproj",
+      "packagesPath": "C:\\Users\\tuan0\\.nuget\\packages\\",
+      "outputPath": "D:\\EXE202\\New folder\\Monopolizers.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Khoa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tuan0\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3121,14 +3214,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Monopolizers.Repository.csproj": {
-              "projectPath": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Monopolizers.Repository.csproj"
+            "D:\\EXE202\\New folder\\Monopolizers.Common\\Monopolizers.Common.csproj": {
+              "projectPath": "D:\\EXE202\\New folder\\Monopolizers.Common\\Monopolizers.Common.csproj"
+            },
+            "D:\\EXE202\\New folder\\Monopolizers.Repositories\\Monopolizers.Repository.csproj": {
+              "projectPath": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\Monopolizers.Repository.csproj"
             }
           }
         }
@@ -3143,7 +3240,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -3164,7 +3261,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

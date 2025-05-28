@@ -13,3 +13,21 @@ C:\Users\Khoa\source\repos\Monopolizers\Monopolizers.Repositories\obj\Debug\net8
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers.Repositories\obj\Debug\net8.0\Monopolizers.Repository.pdb
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers.Repositories\obj\Debug\net8.0\Monopolizers.Repository.genruntimeconfig.cache
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers.Repositories\obj\Debug\net8.0\ref\Monopolizers.Repository.dll
+D:\EXE202\New folder\Monopolizers.Repositories\bin\Debug\net8.0\Monopolizers.Repository.deps.json
+D:\EXE202\New folder\Monopolizers.Repositories\bin\Debug\net8.0\Monopolizers.Repository.runtimeconfig.json
+D:\EXE202\New folder\Monopolizers.Repositories\bin\Debug\net8.0\Monopolizers.Repository.dll
+D:\EXE202\New folder\Monopolizers.Repositories\bin\Debug\net8.0\Monopolizers.Repository.pdb
+D:\EXE202\New folder\Monopolizers.Repositories\obj\Debug\net8.0\Monopolizers.Repository.csproj.AssemblyReference.cache
+D:\EXE202\New folder\Monopolizers.Repositories\obj\Debug\net8.0\Monopolizers.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\EXE202\New folder\Monopolizers.Repositories\obj\Debug\net8.0\Monopolizers.Repository.AssemblyInfoInputs.cache
+D:\EXE202\New folder\Monopolizers.Repositories\obj\Debug\net8.0\Monopolizers.Repository.AssemblyInfo.cs
+D:\EXE202\New folder\Monopolizers.Repositories\obj\Debug\net8.0\Monopolizers.Repository.csproj.CoreCompileInputs.cache
+D:\EXE202\New folder\Monopolizers.Repositories\obj\Debug\net8.0\Monopolizers.Repository.sourcelink.json
+D:\EXE202\New folder\Monopolizers.Repositories\obj\Debug\net8.0\Monopolizers.Repository.dll
+D:\EXE202\New folder\Monopolizers.Repositories\obj\Debug\net8.0\refint\Monopolizers.Repository.dll
+D:\EXE202\New folder\Monopolizers.Repositories\obj\Debug\net8.0\Monopolizers.Repository.pdb
+D:\EXE202\New folder\Monopolizers.Repositories\obj\Debug\net8.0\Monopolizers.Repository.genruntimeconfig.cache
+D:\EXE202\New folder\Monopolizers.Repositories\obj\Debug\net8.0\ref\Monopolizers.Repository.dll
+D:\EXE202\New folder\Monopolizers.Repositories\bin\Debug\net8.0\Monopolizers.Common.dll
+D:\EXE202\New folder\Monopolizers.Repositories\bin\Debug\net8.0\Monopolizers.Common.pdb
+D:\EXE202\New folder\Monopolizers.Repositories\obj\Debug\net8.0\Monopoli.018B3D5C.Up2Date
