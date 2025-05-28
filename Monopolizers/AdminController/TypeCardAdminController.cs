@@ -1,12 +1,15 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Monopolizers.Common.DTO;
 using Monopolizers.Common.DTO.Request;
+using Monopolizers.Common.Helpers;
 using Monopolizers.Service.Contract;
 using Monopolizers.Service.Implementation;
 
 namespace Monopolizers.API.AdminController
 {
+    [Authorize(Roles = AppRole.Admin)]
     [Route("api/admin/typecards")]
     [ApiController]
     public class TypeCardAdminController : ControllerBase

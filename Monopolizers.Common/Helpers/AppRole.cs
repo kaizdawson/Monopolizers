@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Monopolizers.Service.Helpers
+namespace Monopolizers.Common.Helpers
 {
     public class AppRole
     {

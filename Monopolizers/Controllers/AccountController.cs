@@ -1,9 +1,14 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Monopolizers.Common.Helpers;
+using Monopolizers.Repository.DB;
 using Monopolizers.Repository.Models;
 using Monopolizers.Repository.Repositories;
+using Monopolizers.Service.DTOs;
 using Monopolizers.Service.Services;
+using System.Security.Claims;
 
 namespace Monopolizers.Controllers
 {
@@ -18,29 +23,86 @@ namespace Monopolizers.Controllers
             _accountService = accountService;
         }
 
-        [AllowAnonymous]
-        [HttpPost("SignUp")]
-        public async Task<IActionResult> SignUp(SignUpModel signUpModel)
+        [HttpPost("SignupAdmin")]
+        public async Task<IActionResult> SignUpAdmin(SignUpModel model)
         {
-            if (!ModelState.IsValid)
+            var result = await _accountService.SignUpWithRoleAsync(model, AppRole.Admin);
+            if (!result.Succeeded)
             {
-                var firstError = ModelState.Values
-                    .SelectMany(v => v.Errors)
-                    .Select(e => e.ErrorMessage)
-                    .FirstOrDefault();
-
-                return BadRequest(new { message = firstError });
+                return StatusCode(500, new ResponseDTO
+                {
+                    Success = false,
+                    Message = string.Join("; ", result.Errors.Select(e => e.Description))
+                });
             }
 
-            var result = await _accountService.SignUpAsync(signUpModel);
-            if (result.Succeeded)
+            return Ok(new ResponseDTO
             {
-                return Ok(new { message = "Đăng ký thành công!" });
-            }
-
-            var firstIdentityError = result.Errors.Select(e => e.Description).FirstOrDefault();
-            return BadRequest(new { message = firstIdentityError });
+                Success = true,
+                Message = "Tạo tài khoản Admin thành công."
+            });
         }
+        [Authorize(Roles = AppRole.Admin)]
+        [HttpPost("SignupManager")]
+        public async Task<IActionResult> SignUpManager(SignUpModel model)
+        {
+            var result = await _accountService.SignUpWithRoleAsync(model, AppRole.Manager);
+            if (!result.Succeeded)
+            {
+                return StatusCode(500, new ResponseDTO
+                {
+                    Success = false,
+                    Message = string.Join("; ", result.Errors.Select(e => e.Description))
+                });
+            }
+
+            return Ok(new ResponseDTO
+            {
+                Success = true,
+                Message = "Tạo tài khoản Manager thành công."
+            });
+        }
+        [Authorize(Roles = AppRole.Manager)]
+        [HttpPost("SignupStaff")]
+        public async Task<IActionResult> SignUpStaff(SignUpModel model)
+        {
+            var result = await _accountService.SignUpWithRoleAsync(model, AppRole.Staff);
+            if (!result.Succeeded)
+            {
+                return StatusCode(500, new ResponseDTO
+                {
+                    Success = false,
+                    Message = string.Join("; ", result.Errors.Select(e => e.Description))
+                });
+            }
+
+            return Ok(new ResponseDTO
+            {
+                Success = true,
+                Message = "Tạo tài khoản Staff thành công."
+            });
+        }
+        [AllowAnonymous]
+        [HttpPost("SignupCustomer")]
+        public async Task<IActionResult> SignUpCustomer(SignUpModel model)
+        {
+            var result = await _accountService.SignUpWithRoleAsync(model, AppRole.Customer);
+            if (!result.Succeeded)
+            {
+                return StatusCode(500, new ResponseDTO
+                {
+                    Success = false,
+                    Message = string.Join("; ", result.Errors.Select(e => e.Description))
+                });
+            }
+
+            return Ok(new ResponseDTO
+            {
+                Success = true,
+                Message = "Tạo tài khoản Customer thành công."
+            });
+        }
+
 
         [AllowAnonymous]
         [HttpPost("SignIn")]
@@ -55,6 +117,34 @@ namespace Monopolizers.Controllers
 
             return Ok(new { token = result });
         }
+        
+        [HttpPut("BanUser/{userId}")]
+        [Authorize(Roles = AppRole.Admin)]
+
+        public async Task<IActionResult> BanUser(string userId)
+        {
+
+            var success = await _accountService.BanUserAsync(userId);
+            if (!success)
+            {
+                return NotFound(new ResponseDTO
+                {
+                    Success = false,
+                    Message = "Không tìm thấy người dùng hoặc cập nhật thất bại."
+                });
+            }
+
+            return Ok(new ResponseDTO
+            {
+                Success = true,
+                Message = "Tài khoản đã bị khóa (Banned)."
+            });
+        }
+        
+
     }
+
+
+
 
 }

@@ -26,16 +26,20 @@ namespace Monopolizers.Repository.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Role",
+                name: "PricingPlans",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    PricingPlansId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    RoleName = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    SupportAR = table.Column<bool>(type: "bit", nullable: false),
+                    AccessLevel = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Role", x => x.Id);
+                    table.PrimaryKey("PK_PricingPlans", x => x.PricingPlansId);
                 });
 
             migrationBuilder.CreateTable(
@@ -86,30 +90,6 @@ namespace Monopolizers.Repository.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "PricingPlans",
-                columns: table => new
-                {
-                    PlanId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    SupportAR = table.Column<bool>(type: "bit", nullable: false),
-                    AccessLevel = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    RoleId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_PricingPlans", x => x.PlanId);
-                    table.ForeignKey(
-                        name: "FK_PricingPlans_Role_RoleId",
-                        column: x => x.RoleId,
-                        principalTable: "Role",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Card",
                 columns: table => new
                 {
@@ -136,29 +116,6 @@ namespace Monopolizers.Repository.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "WalletTransaction",
-                columns: table => new
-                {
-                    TransactionId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    WalletId = table.Column<int>(type: "int", nullable: false),
-                    Amount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    Type = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_WalletTransaction", x => x.TransactionId);
-                    table.ForeignKey(
-                        name: "FK_WalletTransaction_Wallet_WalletId",
-                        column: x => x.WalletId,
-                        principalTable: "Wallet",
-                        principalColumn: "WalletId",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "AspNetUsers",
                 columns: table => new
                 {
@@ -166,8 +123,8 @@ namespace Monopolizers.Repository.Migrations
                     FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     WalletId = table.Column<int>(type: "int", nullable: true),
-                    RoleId = table.Column<int>(type: "int", nullable: false),
                     PricingPlansId = table.Column<int>(type: "int", nullable: true),
+                    Ban = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -190,18 +147,36 @@ namespace Monopolizers.Repository.Migrations
                         name: "FK_AspNetUsers_PricingPlans_PricingPlansId",
                         column: x => x.PricingPlansId,
                         principalTable: "PricingPlans",
-                        principalColumn: "PlanId");
-                    table.ForeignKey(
-                        name: "FK_AspNetUsers_Role_RoleId",
-                        column: x => x.RoleId,
-                        principalTable: "Role",
-                        principalColumn: "Id");
+                        principalColumn: "PricingPlansId");
                     table.ForeignKey(
                         name: "FK_AspNetUsers_Wallet_WalletId",
                         column: x => x.WalletId,
                         principalTable: "Wallet",
                         principalColumn: "WalletId",
                         onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "WalletTransaction",
+                columns: table => new
+                {
+                    TransactionId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    WalletId = table.Column<int>(type: "int", nullable: false),
+                    Amount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    Type = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_WalletTransaction", x => x.TransactionId);
+                    table.ForeignKey(
+                        name: "FK_WalletTransaction_Wallet_WalletId",
+                        column: x => x.WalletId,
+                        principalTable: "Wallet",
+                        principalColumn: "WalletId",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -366,7 +341,7 @@ namespace Monopolizers.Repository.Migrations
                         name: "FK_PlanPurchase_PricingPlans_PlanId",
                         column: x => x.PlanId,
                         principalTable: "PricingPlans",
-                        principalColumn: "PlanId",
+                        principalColumn: "PricingPlansId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -432,11 +407,6 @@ namespace Monopolizers.Repository.Migrations
                 column: "PricingPlansId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_AspNetUsers_RoleId",
-                table: "AspNetUsers",
-                column: "RoleId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_AspNetUsers_WalletId",
                 table: "AspNetUsers",
                 column: "WalletId",
@@ -484,11 +454,6 @@ namespace Monopolizers.Repository.Migrations
                 name: "IX_PlanPurchase_UserId",
                 table: "PlanPurchase",
                 column: "UserId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_PricingPlans_RoleId",
-                table: "PricingPlans",
-                column: "RoleId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_WalletTransaction_WalletId",
@@ -546,9 +511,6 @@ namespace Monopolizers.Repository.Migrations
 
             migrationBuilder.DropTable(
                 name: "TypeCard");
-
-            migrationBuilder.DropTable(
-                name: "Role");
         }
     }
 }

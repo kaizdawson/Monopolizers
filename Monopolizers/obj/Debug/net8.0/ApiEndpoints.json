@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "Monopolizers.Controllers.AccountController",
+    "Method": "BanUser",
+    "RelativePath": "api/Account/BanUser/{userId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.Controllers.AccountController",
     "Method": "SignIn",
     "RelativePath": "api/Account/SignIn",
     "HttpMethod": "POST",
@@ -17,14 +33,62 @@
   },
   {
     "ContainingType": "Monopolizers.Controllers.AccountController",
-    "Method": "SignUp",
-    "RelativePath": "api/Account/SignUp",
+    "Method": "SignUpAdmin",
+    "RelativePath": "api/Account/SignupAdmin",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "signUpModel",
+        "Name": "model",
+        "Type": "Monopolizers.Repository.Models.SignUpModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.Controllers.AccountController",
+    "Method": "SignUpCustomer",
+    "RelativePath": "api/Account/SignupCustomer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Monopolizers.Repository.Models.SignUpModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.Controllers.AccountController",
+    "Method": "SignUpManager",
+    "RelativePath": "api/Account/SignupManager",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Monopolizers.Repository.Models.SignUpModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.Controllers.AccountController",
+    "Method": "SignUpStaff",
+    "RelativePath": "api/Account/SignupStaff",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
         "Type": "Monopolizers.Repository.Models.SignUpModel",
         "IsRequired": true
       }

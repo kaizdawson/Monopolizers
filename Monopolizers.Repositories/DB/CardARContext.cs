@@ -13,7 +13,6 @@ namespace Monopolizers.Repository.DB
         #region DbSet
 
         public DbSet<Card>? Cards { get; set; }
-        public DbSet<Role>? Roles { get; set; }
         public DbSet<TypeCard>? Types { get; set; }
         public DbSet<Design>? Designs { get; set; }
         public DbSet<Invite>? Invites { get; set; }
@@ -28,7 +27,10 @@ namespace Monopolizers.Repository.DB
         {
             base.OnModelCreating(modelBuilder);
 
-      
+            modelBuilder.Entity<PricingPlans>(entity =>
+            {
+                entity.HasKey(p => p.PricingPlansId); 
+            });
             modelBuilder.Entity<ApplicationUser>()
                 .HasOne(u => u.Wallet)
                 .WithOne(w => w.User)
@@ -41,19 +43,6 @@ namespace Monopolizers.Repository.DB
     .HasForeignKey(u => u.PricingPlansId)
     .OnDelete(DeleteBehavior.NoAction);
 
-
-            modelBuilder.Entity<ApplicationUser>()
-                .HasOne(u => u.Role)
-                .WithMany(r => r.Users)
-                .HasForeignKey(u => u.RoleId)
-                .OnDelete(DeleteBehavior.NoAction);
-
-            modelBuilder.Entity<Role>().HasData(
-        new Role { Id = 1, RoleName = "Admin" },
-        new Role { Id = 2, RoleName = "Customer" },
-        new Role { Id = 3, RoleName = "Manager" },
-        new Role { Id = 4, RoleName = "Staff" }
-    );
 
 
 
