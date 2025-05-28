@@ -11,7 +11,9 @@ namespace Monopolizers.Service.Services
 {
     public interface IAccountService
     {
-        Task<IdentityResult> SignUpAsync(SignUpModel model);
+        Task<IdentityResult> SignUpWithRoleAsync(SignUpModel model, string roleName);
+
         Task<string> SignInAsync(SignInModel model);
+        Task<bool> BanUserAsync(string userId);
     }
 }

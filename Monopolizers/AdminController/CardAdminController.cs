@@ -1,11 +1,14 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Monopolizers.Common.DTO;
 using Monopolizers.Common.DTO.Request;
+using Monopolizers.Common.Helpers;
 using Monopolizers.Service.Contract;
 
 namespace Monopolizers.API.AdminController
 {
+    [Authorize(Roles = AppRole.Admin)]
     [Route("api/admin/cards")]
     [ApiController]
     public class CardAdminController : ControllerBase
@@ -16,6 +19,7 @@ namespace Monopolizers.API.AdminController
         {
             _service = service;
         }
+        
         [HttpGet]
         public async Task<ResponseDTO> GetAll([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10)
         {

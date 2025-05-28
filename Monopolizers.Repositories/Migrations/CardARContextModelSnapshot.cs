@@ -163,6 +163,10 @@ namespace Monopolizers.Repository.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
+                    b.Property<string>("Ban")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
@@ -208,9 +212,6 @@ namespace Monopolizers.Repository.Migrations
                     b.Property<int?>("PricingPlansId")
                         .HasColumnType("int");
 
-                    b.Property<int>("RoleId")
-                        .HasColumnType("int");
-
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
@@ -235,8 +236,6 @@ namespace Monopolizers.Repository.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.HasIndex("PricingPlansId");
-
-                    b.HasIndex("RoleId");
 
                     b.HasIndex("WalletId")
                         .IsUnique()
@@ -439,11 +438,11 @@ namespace Monopolizers.Repository.Migrations
 
             modelBuilder.Entity("Monopolizers.Repository.DB.PricingPlans", b =>
                 {
-                    b.Property<int>("PlanId")
+                    b.Property<int>("PricingPlansId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PlanId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PricingPlansId"));
 
                     b.Property<string>("AccessLevel")
                         .IsRequired()
@@ -460,56 +459,12 @@ namespace Monopolizers.Repository.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("RoleId")
-                        .HasColumnType("int");
-
                     b.Property<bool>("SupportAR")
                         .HasColumnType("bit");
 
-                    b.HasKey("PlanId");
-
-                    b.HasIndex("RoleId");
+                    b.HasKey("PricingPlansId");
 
                     b.ToTable("PricingPlans");
-                });
-
-            modelBuilder.Entity("Monopolizers.Repository.DB.Role", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("RoleName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Role");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            RoleName = "Admin"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            RoleName = "Customer"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            RoleName = "Manager"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            RoleName = "Staff"
-                        });
                 });
 
             modelBuilder.Entity("Monopolizers.Repository.DB.TypeCard", b =>
@@ -635,20 +590,12 @@ namespace Monopolizers.Repository.Migrations
                         .HasForeignKey("PricingPlansId")
                         .OnDelete(DeleteBehavior.NoAction);
 
-                    b.HasOne("Monopolizers.Repository.DB.Role", "Role")
-                        .WithMany("Users")
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
                     b.HasOne("Monopolizers.Repository.DB.Wallet", "Wallet")
                         .WithOne("User")
                         .HasForeignKey("Monopolizers.Repository.DB.ApplicationUser", "WalletId")
                         .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("PricingPlans");
-
-                    b.Navigation("Role");
 
                     b.Navigation("Wallet");
                 });
@@ -724,17 +671,6 @@ namespace Monopolizers.Repository.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Monopolizers.Repository.DB.PricingPlans", b =>
-                {
-                    b.HasOne("Monopolizers.Repository.DB.Role", "Role")
-                        .WithMany("PricingPlans")
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Role");
-                });
-
             modelBuilder.Entity("Monopolizers.Repository.DB.WalletTransaction", b =>
                 {
                     b.HasOne("Monopolizers.Repository.DB.Wallet", "Wallet")
@@ -768,13 +704,6 @@ namespace Monopolizers.Repository.Migrations
             modelBuilder.Entity("Monopolizers.Repository.DB.PricingPlans", b =>
                 {
                     b.Navigation("PlanPurchases");
-
-                    b.Navigation("Users");
-                });
-
-            modelBuilder.Entity("Monopolizers.Repository.DB.Role", b =>
-                {
-                    b.Navigation("PricingPlans");
 
                     b.Navigation("Users");
                 });

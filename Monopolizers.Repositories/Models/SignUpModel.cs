@@ -28,5 +28,6 @@ namespace Monopolizers.Repository.Models
         [Required(ErrorMessage = "Số điện thoại không được để trống.")]
         [Phone(ErrorMessage = "Số điện thoại không hợp lệ.")]
         public string PhoneNumber { get; set; }
+
     }
 }
