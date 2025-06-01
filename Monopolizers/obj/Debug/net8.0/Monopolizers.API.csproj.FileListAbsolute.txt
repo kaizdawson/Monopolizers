@@ -323,3 +323,5 @@ C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\refint\Mon
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\Monopolizers.API.pdb
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\Monopolizers.API.genruntimeconfig.cache
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\obj\Debug\net8.0\ref\Monopolizers.API.dll
+D:\EXE202\New folder\Monopolizers\bin\Debug\net8.0\CloudinaryDotNet.dll
+D:\EXE202\New folder\Monopolizers\bin\Debug\net8.0\Newtonsoft.Json.dll
