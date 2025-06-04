@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "Monopolizers.Controllers.AccountController",
+    "Method": "BanUser",
+    "RelativePath": "api/Account/BanUser/{userId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.Controllers.AccountController",
     "Method": "SignIn",
     "RelativePath": "api/Account/SignIn",
     "HttpMethod": "POST",
@@ -9,7 +25,7 @@
     "Parameters": [
       {
         "Name": "signInModel",
-        "Type": "Monopolizers.Models.SignInModel",
+        "Type": "Monopolizers.Repository.Models.SignInModel",
         "IsRequired": true
       }
     ],
@@ -17,16 +33,488 @@
   },
   {
     "ContainingType": "Monopolizers.Controllers.AccountController",
-    "Method": "SignUp",
-    "RelativePath": "api/Account/SignUp",
+    "Method": "SignUpAdmin",
+    "RelativePath": "api/Account/SignupAdmin",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "signUpModel",
-        "Type": "Monopolizers.Models.SignUpModel",
+        "Name": "model",
+        "Type": "Monopolizers.Repository.Models.SignUpModel",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.Controllers.AccountController",
+    "Method": "SignUpCustomer",
+    "RelativePath": "api/Account/SignupCustomer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Monopolizers.Repository.Models.SignUpModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.Controllers.AccountController",
+    "Method": "SignUpManager",
+    "RelativePath": "api/Account/SignupManager",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Monopolizers.Repository.Models.SignUpModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.Controllers.AccountController",
+    "Method": "SignUpStaff",
+    "RelativePath": "api/Account/SignupStaff",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Monopolizers.Repository.Models.SignUpModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.API.AdminController.CardAdminController",
+    "Method": "GetAll",
+    "RelativePath": "api/admin/cards",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Monopolizers.Common.DTO.ResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Monopolizers.API.AdminController.CardAdminController",
+    "Method": "Create",
+    "RelativePath": "api/admin/cards",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Monopolizers.Common.DTO.Request.CreateCardDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Monopolizers.Common.DTO.ResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Monopolizers.API.AdminController.CardAdminController",
+    "Method": "Update",
+    "RelativePath": "api/admin/cards/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Monopolizers.Common.DTO.Request.UpdateCardDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Monopolizers.Common.DTO.ResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Monopolizers.API.AdminController.CardAdminController",
+    "Method": "Delete",
+    "RelativePath": "api/admin/cards/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Monopolizers.Common.DTO.ResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Monopolizers.API.AdminController.TypeCardAdminController",
+    "Method": "GetAll",
+    "RelativePath": "api/admin/typecards",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Monopolizers.Common.DTO.ResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Monopolizers.API.AdminController.TypeCardAdminController",
+    "Method": "Create",
+    "RelativePath": "api/admin/typecards",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Monopolizers.Common.DTO.Request.CreateTypeCardDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Monopolizers.Common.DTO.ResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Monopolizers.API.AdminController.TypeCardAdminController",
+    "Method": "Update",
+    "RelativePath": "api/admin/typecards",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Monopolizers.Common.DTO.Request.UpdateTypeCardDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Monopolizers.Common.DTO.ResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Monopolizers.API.AdminController.TypeCardAdminController",
+    "Method": "Delete",
+    "RelativePath": "api/admin/typecards/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Monopolizers.Common.DTO.ResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Monopolizers.API.UserControllers.CardCustomerController",
+    "Method": "GetAll",
+    "RelativePath": "api/customer/cards",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Monopolizers.Common.DTO.ResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Monopolizers.API.UserControllers.CardCustomerController",
+    "Method": "CheckPermissionToDesign",
+    "RelativePath": "api/customer/cards/check-design/{cardId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cardId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Monopolizers.Common.DTO.ResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Monopolizers.API.UserControllers.CardCustomerController",
+    "Method": "GetCardsByType",
+    "RelativePath": "api/customer/cards/filter/by-type/{typeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "typeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Monopolizers.Common.DTO.ResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Monopolizers.API.UserControllers.CardCustomerController",
+    "Method": "GetAllCardsPublic",
+    "RelativePath": "api/customer/cards/public/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Monopolizers.Common.DTO.ResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Monopolizers.API.UserControllers.CardCustomerController",
+    "Method": "SearchCards",
+    "RelativePath": "api/customer/cards/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "keyword",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Monopolizers.Common.DTO.ResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Monopolizers.API.UserControllers.WalletController",
+    "Method": "GetWalletBalance",
+    "RelativePath": "api/customer/wallet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Monopolizers.Common.DTO.WalletDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Monopolizers.API.UserControllers.WalletController",
+    "Method": "CreateVNPayPayment",
+    "RelativePath": "api/customer/wallet/CreateVNPayPayment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Monopolizers.Common.DTO.CreateVNPayRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.API.UserControllers.WalletController",
+    "Method": "VNPayReturn",
+    "RelativePath": "api/customer/wallet/VNPayReturn",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.API.Controllers.UploadController",
+    "Method": "UploadMedia",
+    "RelativePath": "api/Upload/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
