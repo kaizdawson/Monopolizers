@@ -800,6 +800,78 @@
           }
         }
       }
+    },
+    "/api/customer/wallet": {
+      "get": {
+        "tags": [
+          "Wallet"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/WalletDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WalletDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WalletDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/customer/wallet/CreateVNPayPayment": {
+      "post": {
+        "tags": [
+          "Wallet"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateVNPayRequestDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateVNPayRequestDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateVNPayRequestDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/customer/wallet/VNPayReturn": {
+      "get": {
+        "tags": [
+          "Wallet"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -866,6 +938,16 @@
           "name": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateVNPayRequestDTO": {
+        "type": "object",
+        "properties": {
+          "amount": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false
@@ -1003,6 +1085,20 @@
           "name": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WalletDTO": {
+        "type": "object",
+        "properties": {
+          "walletId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "balance": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Monopolizers.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+528c024ad8bbaed6d902a17ede05fdbbea902bda")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85def7a683fe2b7809bb8086d4178e5d153ab1c4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Monopolizers.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Monopolizers.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
