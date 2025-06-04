@@ -34,6 +34,9 @@ builder.Services.AddDbContext<CardARContext>(options => { options.UseSqlServer(b
 
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
+builder.Services.AddScoped<IWalletRepository, WalletRepository>();
+builder.Services.AddScoped<IWalletService, WalletService>();
+builder.Services.AddScoped<IVnPayService, VnPayService>();
 
 
 

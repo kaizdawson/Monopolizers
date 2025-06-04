@@ -458,6 +458,52 @@
     ]
   },
   {
+    "ContainingType": "Monopolizers.API.UserControllers.WalletController",
+    "Method": "GetWalletBalance",
+    "RelativePath": "api/customer/wallet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Monopolizers.Common.DTO.WalletDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Monopolizers.API.UserControllers.WalletController",
+    "Method": "CreateVNPayPayment",
+    "RelativePath": "api/customer/wallet/CreateVNPayPayment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Monopolizers.Common.DTO.CreateVNPayRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.API.UserControllers.WalletController",
+    "Method": "VNPayReturn",
+    "RelativePath": "api/customer/wallet/VNPayReturn",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Monopolizers.API.Controllers.UploadController",
     "Method": "UploadMedia",
     "RelativePath": "api/Upload/upload",
