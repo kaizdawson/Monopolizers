@@ -1,5 +1,0 @@
-C:\Users\Khoa\source\repos\Monopolizers\Monopolizers.Services\obj\Debug\net8.0\Monopolizers.Services.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Khoa\source\repos\Monopolizers\Monopolizers.Services\obj\Debug\net8.0\Monopolizers.Services.AssemblyInfoInputs.cache
-C:\Users\Khoa\source\repos\Monopolizers\Monopolizers.Services\obj\Debug\net8.0\Monopolizers.Services.AssemblyInfo.cs
-C:\Users\Khoa\source\repos\Monopolizers\Monopolizers.Services\obj\Debug\net8.0\Monopolizers.Services.csproj.CoreCompileInputs.cache
-C:\Users\Khoa\source\repos\Monopolizers\Monopolizers.Services\obj\Debug\net8.0\Monopolizers.Services.sourcelink.json
