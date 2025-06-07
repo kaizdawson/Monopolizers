@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.Formatters;
 using Monopolizers.Common.BusinessCode;
 using Monopolizers.Common.DTO;
 using Monopolizers.Common.DTO.Request;
@@ -346,6 +347,43 @@ namespace Monopolizers.Service.Implementation
                 res.BusinessCode = BusinessCode.UPDATE_SUCESSFULLY;
                 res.Data = card.CardId;
                 res.message = "Card updated successfully.";
+            }
+            catch (Exception ex)
+            {
+                res.IsSucess = false;
+                res.BusinessCode = BusinessCode.EXCEPTION;
+                res.message = ex.Message;
+            }
+            return res;
+        }
+
+        public async Task<ResponseDTO> GetByIdAsync(int id)
+        {
+            ResponseDTO res = new ResponseDTO();
+            try
+            {
+                var card = await _cardRepository.GetById(id);
+                if (card == null)
+                {
+                    res.IsSucess = false ;
+                    res.BusinessCode = BusinessCode.NOT_FOUND;
+                    res.message = "Card not found.";
+                    return res;
+                }
+                res.IsSucess = true;
+                res.BusinessCode= BusinessCode.GET_DATA_SUCCESSFULLY;
+                res.Data = new CardDTO
+                {
+                    CardId = card.CardId,
+                    Title = card.Title,
+                    Description = card.Description,
+                    AvtImgUrl = card.AvtImgUrl,
+                    ARVideoUrl = card.ARVideoUrl,
+                    Category = card.Category,
+                    TypeId = card.TypeId,
+                    DefaultData = card.DefaultData,
+                    AccessLevel = Enum.Parse<AccessLevelEnum>(card.AccessLevel)
+                };
             }
             catch (Exception ex)
             {

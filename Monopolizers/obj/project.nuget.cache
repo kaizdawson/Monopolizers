@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b8Ufj4MFkpo=",
+  "dgSpecHash": "pFEuqkz5Tp4=",
   "success": true,
-  "projectFilePath": "D:\\EXE202\\New folder\\Monopolizers\\Monopolizers.API.csproj",
+  "projectFilePath": "D:\\EXE202\\New folder\\Monopolizers\\Monopolizers\\Monopolizers.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tuan0\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\tuan0\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

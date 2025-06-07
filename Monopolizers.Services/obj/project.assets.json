@@ -3195,11 +3195,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EXE202\\New folder\\Monopolizers.Services\\Monopolizers.Service.csproj",
+      "projectUniqueName": "D:\\EXE202\\New folder\\Monopolizers\\Monopolizers.Services\\Monopolizers.Service.csproj",
       "projectName": "Monopolizers.Service",
-      "projectPath": "D:\\EXE202\\New folder\\Monopolizers.Services\\Monopolizers.Service.csproj",
+      "projectPath": "D:\\EXE202\\New folder\\Monopolizers\\Monopolizers.Services\\Monopolizers.Service.csproj",
       "packagesPath": "C:\\Users\\tuan0\\.nuget\\packages\\",
-      "outputPath": "D:\\EXE202\\New folder\\Monopolizers.Services\\obj\\",
+      "outputPath": "D:\\EXE202\\New folder\\Monopolizers\\Monopolizers.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3221,11 +3221,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\EXE202\\New folder\\Monopolizers.Common\\Monopolizers.Common.csproj": {
-              "projectPath": "D:\\EXE202\\New folder\\Monopolizers.Common\\Monopolizers.Common.csproj"
+            "D:\\EXE202\\New folder\\Monopolizers\\Monopolizers.Common\\Monopolizers.Common.csproj": {
+              "projectPath": "D:\\EXE202\\New folder\\Monopolizers\\Monopolizers.Common\\Monopolizers.Common.csproj"
             },
-            "D:\\EXE202\\New folder\\Monopolizers.Repositories\\Monopolizers.Repository.csproj": {
-              "projectPath": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\Monopolizers.Repository.csproj"
+            "D:\\EXE202\\New folder\\Monopolizers\\Monopolizers.Repositories\\Monopolizers.Repository.csproj": {
+              "projectPath": "D:\\EXE202\\New folder\\Monopolizers\\Monopolizers.Repositories\\Monopolizers.Repository.csproj"
             }
           }
         }

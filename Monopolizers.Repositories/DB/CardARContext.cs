@@ -21,6 +21,8 @@ namespace Monopolizers.Repository.DB
         public DbSet<PricingPlans>? PricingPlans { get; set; }
         public DbSet<PlanPurchase>? PlanPurchases { get; set; }
         public DbSet<Asset>? Assets { get; set; }
+        public DbSet<UserSavedCard> UserSavedCards { get; set; }
+
         #endregion
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
