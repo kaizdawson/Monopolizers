@@ -484,6 +484,39 @@ namespace Monopolizers.Repository.Migrations
                     b.ToTable("TypeCard");
                 });
 
+            modelBuilder.Entity("Monopolizers.Repository.DB.UserSavedCard", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Background")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CardId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ElementsJson")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("SavedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserSavedCard");
+                });
+
             modelBuilder.Entity("Monopolizers.Repository.DB.Wallet", b =>
                 {
                     b.Property<int>("WalletId")
@@ -667,6 +700,17 @@ namespace Monopolizers.Repository.Migrations
                         .IsRequired();
 
                     b.Navigation("Plan");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Monopolizers.Repository.DB.UserSavedCard", b =>
+                {
+                    b.HasOne("Monopolizers.Repository.DB.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("User");
                 });

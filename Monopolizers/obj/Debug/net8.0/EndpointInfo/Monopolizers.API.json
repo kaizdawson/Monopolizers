@@ -182,6 +182,18 @@
         }
       }
     },
+    "/api/customer/assets/all": {
+      "get": {
+        "tags": [
+          "AssetCustomer"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/admin/cards": {
       "get": {
         "tags": [
@@ -336,6 +348,44 @@
         }
       },
       "delete": {
+        "tags": [
+          "CardAdmin"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseDTO"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
         "tags": [
           "CardAdmin"
         ],
@@ -608,6 +658,176 @@
         }
       }
     },
+    "/api/customer/designs": {
+      "post": {
+        "tags": [
+          "DesignCustomer"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateDesignDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateDesignDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateDesignDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "DesignCustomer"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/customer/designs/{id}": {
+      "get": {
+        "tags": [
+          "DesignCustomer"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DesignCustomer"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/customer/saved-cards": {
+      "post": {
+        "tags": [
+          "SavedCard"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SaveCardDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SaveCardDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SaveCardDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "SavedCard"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/customer/saved-cards/{id}": {
+      "get": {
+        "tags": [
+          "SavedCard"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SavedCard"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/admin/typecards": {
       "get": {
         "tags": [
@@ -860,6 +1080,28 @@
         },
         "additionalProperties": false
       },
+      "CreateDesignDTO": {
+        "type": "object",
+        "properties": {
+          "designName": {
+            "type": "string",
+            "nullable": true
+          },
+          "designData": {
+            "type": "string",
+            "nullable": true
+          },
+          "previewImageUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "cardId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateTypeCardDTO": {
         "type": "object",
         "properties": {
@@ -883,6 +1125,24 @@
             "$ref": "#/components/schemas/BusinessCode"
           },
           "message": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SaveCardDTO": {
+        "type": "object",
+        "properties": {
+          "cardId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "background": {
+            "type": "string",
+            "nullable": true
+          },
+          "elementsJson": {
             "type": "string",
             "nullable": true
           }
@@ -985,10 +1245,6 @@
           },
           "accessLevel": {
             "$ref": "#/components/schemas/AccessLevelEnum"
-          },
-          "cardId": {
-            "type": "integer",
-            "format": "int32"
           }
         },
         "additionalProperties": false

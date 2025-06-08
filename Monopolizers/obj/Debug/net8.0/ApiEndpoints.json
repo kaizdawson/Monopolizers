@@ -210,6 +210,32 @@
     ]
   },
   {
+    "ContainingType": "Monopolizers.API.AdminController.CardAdminController",
+    "Method": "GetById",
+    "RelativePath": "api/admin/cards/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Monopolizers.Common.DTO.ResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Monopolizers.API.AdminController.TypeCardAdminController",
     "Method": "GetAll",
     "RelativePath": "api/admin/typecards",
@@ -306,6 +332,16 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Monopolizers.API.UserControllers.AssetCustomerController",
+    "Method": "GetAll",
+    "RelativePath": "api/customer/assets/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Monopolizers.API.UserControllers.CardCustomerController",
@@ -456,6 +492,122 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Monopolizers.API.UserControllers.DesignCustomerController",
+    "Method": "Create",
+    "RelativePath": "api/customer/designs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Monopolizers.Common.DTO.Request.CreateDesignDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.API.UserControllers.DesignCustomerController",
+    "Method": "GetMine",
+    "RelativePath": "api/customer/designs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.API.UserControllers.DesignCustomerController",
+    "Method": "GetById",
+    "RelativePath": "api/customer/designs/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.API.UserControllers.DesignCustomerController",
+    "Method": "Delete",
+    "RelativePath": "api/customer/designs/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.API.UserControllers.SavedCardController",
+    "Method": "SaveCard",
+    "RelativePath": "api/customer/saved-cards",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Monopolizers.Common.DTO.SaveCardDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.API.UserControllers.SavedCardController",
+    "Method": "GetMyCards",
+    "RelativePath": "api/customer/saved-cards",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.API.UserControllers.SavedCardController",
+    "Method": "GetById",
+    "RelativePath": "api/customer/saved-cards/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.API.UserControllers.SavedCardController",
+    "Method": "Delete",
+    "RelativePath": "api/customer/saved-cards/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Monopolizers.API.Controllers.UploadController",

@@ -24,6 +24,8 @@ builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepositor
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<ICardService, CardService>();
 builder.Services.AddScoped<ITypeCardService, TypeCardService>();
+builder.Services.AddScoped<IAssetService, AssetService>();
+builder.Services.AddScoped<IDesignService, DesignService>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 

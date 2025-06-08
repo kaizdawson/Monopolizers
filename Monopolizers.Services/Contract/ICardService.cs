@@ -20,5 +20,6 @@ namespace Monopolizers.Service.Contract
         Task<ResponseDTO> SearchCardsAsync(string keyword, int pageNumber, int pageSize);
         Task<ResponseDTO> GetAllCardsWithoutAccessFilterAsync(int pageNumber, int pageSize);
         Task<ResponseDTO> CheckDesignPermissionAsync(int cardId, AccessLevelEnum userLevel);
-        }
+        Task<ResponseDTO> GetByIdAsync(int id);
+    }
 }
