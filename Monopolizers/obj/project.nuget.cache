@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4jD/5T2m1SE=",
+  "dgSpecHash": "4nF4dWG8XLI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers\\Monopolizers.API.csproj",
+  "projectFilePath": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\Monopolizers.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Khoa\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Khoa\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

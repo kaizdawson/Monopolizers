@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Services\\Monopolizers.Service.csproj": {}
+    "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Monopolizers.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Common\\Monopolizers.Common.csproj": {
+    "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\Monopolizers.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Common\\Monopolizers.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\Monopolizers.Common.csproj",
         "projectName": "Monopolizers.Common",
-        "projectPath": "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Common\\Monopolizers.Common.csproj",
+        "projectPath": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\Monopolizers.Common.csproj",
         "packagesPath": "C:\\Users\\Khoa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Common\\obj\\",
+        "outputPath": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Repositories\\Monopolizers.Repository.csproj": {
+    "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Monopolizers.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Repositories\\Monopolizers.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Monopolizers.Repository.csproj",
         "projectName": "Monopolizers.Repository",
-        "projectPath": "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Repositories\\Monopolizers.Repository.csproj",
+        "projectPath": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Monopolizers.Repository.csproj",
         "packagesPath": "C:\\Users\\Khoa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Repositories\\obj\\",
+        "outputPath": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,8 +97,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Common\\Monopolizers.Common.csproj": {
-                "projectPath": "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Common\\Monopolizers.Common.csproj"
+              "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\Monopolizers.Common.csproj": {
+                "projectPath": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\Monopolizers.Common.csproj"
               }
             }
           }
@@ -174,14 +174,14 @@
         }
       }
     },
-    "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Services\\Monopolizers.Service.csproj": {
+    "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Monopolizers.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Services\\Monopolizers.Service.csproj",
+        "projectUniqueName": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Monopolizers.Service.csproj",
         "projectName": "Monopolizers.Service",
-        "projectPath": "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Services\\Monopolizers.Service.csproj",
+        "projectPath": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Monopolizers.Service.csproj",
         "packagesPath": "C:\\Users\\Khoa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Services\\obj\\",
+        "outputPath": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -202,11 +202,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Common\\Monopolizers.Common.csproj": {
-                "projectPath": "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Common\\Monopolizers.Common.csproj"
+              "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\Monopolizers.Common.csproj": {
+                "projectPath": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\Monopolizers.Common.csproj"
               },
-              "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Repositories\\Monopolizers.Repository.csproj": {
-                "projectPath": "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Repositories\\Monopolizers.Repository.csproj"
+              "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Monopolizers.Repository.csproj": {
+                "projectPath": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Monopolizers.Repository.csproj"
               }
             }
           }
