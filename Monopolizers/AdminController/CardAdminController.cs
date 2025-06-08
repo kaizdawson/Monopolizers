@@ -19,7 +19,7 @@ namespace Monopolizers.API.AdminController
         {
             _service = service;
         }
-        
+
         [HttpGet]
         public async Task<ResponseDTO> GetAll([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10)
         {
@@ -42,6 +42,11 @@ namespace Monopolizers.API.AdminController
         public async Task<ResponseDTO> Delete(int id)
         {
             return await _service.DeleteAsync(id);
+        }
+        [HttpGet("{id}")]
+        public async Task<ResponseDTO> GetById(int id)
+        {
+            return await _service.GetByIdAsync(id);
         }
     }
 }
