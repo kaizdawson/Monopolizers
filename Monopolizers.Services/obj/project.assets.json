@@ -3189,23 +3189,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tuan0\\.nuget\\packages\\": {},
+    "C:\\Users\\Khoa\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EXE202\\New folder\\Monopolizers\\Monopolizers.Services\\Monopolizers.Service.csproj",
+      "projectUniqueName": "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Services\\Monopolizers.Service.csproj",
       "projectName": "Monopolizers.Service",
-      "projectPath": "D:\\EXE202\\New folder\\Monopolizers\\Monopolizers.Services\\Monopolizers.Service.csproj",
-      "packagesPath": "C:\\Users\\tuan0\\.nuget\\packages\\",
-      "outputPath": "D:\\EXE202\\New folder\\Monopolizers\\Monopolizers.Services\\obj\\",
+      "projectPath": "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Services\\Monopolizers.Service.csproj",
+      "packagesPath": "C:\\Users\\Khoa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\tuan0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Khoa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3214,18 +3214,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\EXE202\\New folder\\Monopolizers\\Monopolizers.Common\\Monopolizers.Common.csproj": {
-              "projectPath": "D:\\EXE202\\New folder\\Monopolizers\\Monopolizers.Common\\Monopolizers.Common.csproj"
+            "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Common\\Monopolizers.Common.csproj": {
+              "projectPath": "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Common\\Monopolizers.Common.csproj"
             },
-            "D:\\EXE202\\New folder\\Monopolizers\\Monopolizers.Repositories\\Monopolizers.Repository.csproj": {
-              "projectPath": "D:\\EXE202\\New folder\\Monopolizers\\Monopolizers.Repositories\\Monopolizers.Repository.csproj"
+            "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Repositories\\Monopolizers.Repository.csproj": {
+              "projectPath": "C:\\Users\\Khoa\\Source\\Repos\\Monopolizers\\Monopolizers.Repositories\\Monopolizers.Repository.csproj"
             }
           }
         }
@@ -3240,7 +3239,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -3261,7 +3260,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
