@@ -3,49 +3,84 @@
   "WorkspaceRootPath": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.services\\implementation\\planservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers\\controllers\\plancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:controllers\\plancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.services\\contract\\iplanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.repositories\\repositories\\planpurchaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.repositories\\db\\cardarcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.repositories\\db\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.repositories\\repositories\\pricingplansrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.repositories\\repositories\\ipricingplansrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.repositories\\repositories\\iplanpurchaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.services\\implementation\\walletservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.common\\dto\\buyplanrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers\\usercontrollers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:usercontrollers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.services\\implementation\\walletservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.services\\implementation\\vnpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.common\\dto\\updatepricingplandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.common\\dto\\responsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.services\\dtos\\responsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.services\\contract\\iwalletservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.common\\dto\\createpricingplandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.services\\contract\\ivnpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.common\\dto\\pricingplandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.repositories\\repositories\\walletrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.common\\dto\\carddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.repositories\\repositories\\iwalletrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.common\\dto\\assetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.repositories\\models\\vnpaymentresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.common\\enums\\accesslevelenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.common\\helpers\\vnpaylibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.common\\dto\\cloudinarysettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.common\\dto\\walletdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.common\\dto\\designdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.common\\dto\\createvnpayrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers\\usercontrollers\\cardcustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:usercontrollers\\cardcustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 26,
           "Children": [
             {
               "$type": "Bookmark",
@@ -67,33 +102,111 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\DB\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\DB\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\DB\\ApplicationUser.cs",
+              "RelativeToolTip": "..\\Monopolizers.Repositories\\DB\\ApplicationUser.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T06:46:27.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "PlanPurchaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Repositories\\PlanPurchaseRepository.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\Repositories\\PlanPurchaseRepository.cs",
+              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Repositories\\PlanPurchaseRepository.cs",
+              "RelativeToolTip": "..\\Monopolizers.Repositories\\Repositories\\PlanPurchaseRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAIA0wBcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T06:45:26.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IPlanPurchaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Repositories\\IPlanPurchaseRepository.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\Repositories\\IPlanPurchaseRepository.cs",
+              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Repositories\\IPlanPurchaseRepository.cs",
+              "RelativeToolTip": "..\\Monopolizers.Repositories\\Repositories\\IPlanPurchaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T06:45:12.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "WalletService.cs",
               "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Implementation\\WalletService.cs",
               "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Implementation\\WalletService.cs",
               "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Implementation\\WalletService.cs",
               "RelativeToolTip": "..\\Monopolizers.Services\\Implementation\\WalletService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T14:02:50.375Z",
+              "WhenOpened": "2025-06-10T06:40:29.095Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "VnPayService.cs",
-              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Implementation\\VnPayService.cs",
-              "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Implementation\\VnPayService.cs",
-              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Implementation\\VnPayService.cs",
-              "RelativeToolTip": "..\\Monopolizers.Services\\Implementation\\VnPayService.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowAQAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "BuyPlanRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\DTO\\BuyPlanRequestDTO.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\DTO\\BuyPlanRequestDTO.cs",
+              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\DTO\\BuyPlanRequestDTO.cs",
+              "RelativeToolTip": "..\\Monopolizers.Common\\DTO\\BuyPlanRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T14:02:21.721Z",
+              "WhenOpened": "2025-06-10T06:38:34.463Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
+              "Title": "WalletController.cs",
+              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\UserControllers\\WalletController.cs",
+              "RelativeDocumentMoniker": "UserControllers\\WalletController.cs",
+              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\UserControllers\\WalletController.cs",
+              "RelativeToolTip": "UserControllers\\WalletController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T06:32:29.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-10T06:26:30.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\DTO\\ResponseDTO.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\DTO\\ResponseDTO.cs",
+              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\DTO\\ResponseDTO.cs",
+              "RelativeToolTip": "..\\Monopolizers.Common\\DTO\\ResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T06:19:38.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "ResponseDTO.cs",
               "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\DTOs\\ResponseDTO.cs",
               "RelativeDocumentMoniker": "..\\Monopolizers.Services\\DTOs\\ResponseDTO.cs",
@@ -101,150 +214,215 @@
               "RelativeToolTip": "..\\Monopolizers.Services\\DTOs\\ResponseDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T14:01:54.908Z",
+              "WhenOpened": "2025-06-10T06:19:24.858Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IWalletService.cs",
-              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Contract\\IWalletService.cs",
-              "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Contract\\IWalletService.cs",
-              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Contract\\IWalletService.cs",
-              "RelativeToolTip": "..\\Monopolizers.Services\\Contract\\IWalletService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "CardARContext.cs",
+              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\DB\\CardARContext.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\DB\\CardARContext.cs",
+              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\DB\\CardARContext.cs",
+              "RelativeToolTip": "..\\Monopolizers.Repositories\\DB\\CardARContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T14:01:22.437Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IVnPayService.cs",
-              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Contract\\IVnPayService.cs",
-              "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Contract\\IVnPayService.cs",
-              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Contract\\IVnPayService.cs",
-              "RelativeToolTip": "..\\Monopolizers.Services\\Contract\\IVnPayService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T14:00:45.021Z",
+              "WhenOpened": "2025-06-10T06:07:19.696Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "WalletRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Repositories\\WalletRepository.cs",
-              "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\Repositories\\WalletRepository.cs",
-              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Repositories\\WalletRepository.cs",
-              "RelativeToolTip": "..\\Monopolizers.Repositories\\Repositories\\WalletRepository.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAIwAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T13:59:52.511Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IWalletRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Repositories\\IWalletRepository.cs",
-              "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\Repositories\\IWalletRepository.cs",
-              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Repositories\\IWalletRepository.cs",
-              "RelativeToolTip": "..\\Monopolizers.Repositories\\Repositories\\IWalletRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T13:59:27.737Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "VnPaymentResponseModel.cs",
-              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Models\\VnPaymentResponseModel.cs",
-              "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\Models\\VnPaymentResponseModel.cs",
-              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Models\\VnPaymentResponseModel.cs",
-              "RelativeToolTip": "..\\Monopolizers.Repositories\\Models\\VnPaymentResponseModel.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAgAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T13:58:45.945Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "VNPayLibrary.cs",
-              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\Helpers\\VNPayLibrary.cs",
-              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\Helpers\\VNPayLibrary.cs",
-              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\Helpers\\VNPayLibrary.cs",
-              "RelativeToolTip": "..\\Monopolizers.Common\\Helpers\\VNPayLibrary.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T13:55:49.858Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "WalletDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\DTO\\WalletDTO.cs",
-              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\DTO\\WalletDTO.cs",
-              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\DTO\\WalletDTO.cs",
-              "RelativeToolTip": "..\\Monopolizers.Common\\DTO\\WalletDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T13:55:17.679Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CreateVNPayRequestDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\DTO\\CreateVNPayRequestDTO.cs",
-              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\DTO\\CreateVNPayRequestDTO.cs",
-              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\DTO\\CreateVNPayRequestDTO.cs",
-              "RelativeToolTip": "..\\Monopolizers.Common\\DTO\\CreateVNPayRequestDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T13:54:46.965Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAoAAAAAAAAAAADwvxUAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-08T13:52:53.771Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAApwCkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T13:52:03.069Z",
+              "WhenOpened": "2025-06-10T06:07:02.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PricingPlansRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Repositories\\PricingPlansRepository.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\Repositories\\PricingPlansRepository.cs",
+              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Repositories\\PricingPlansRepository.cs",
+              "RelativeToolTip": "..\\Monopolizers.Repositories\\Repositories\\PricingPlansRepository.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T06:05:43.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IPricingPlansRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Repositories\\IPricingPlansRepository.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\Repositories\\IPricingPlansRepository.cs",
+              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Repositories\\IPricingPlansRepository.cs",
+              "RelativeToolTip": "..\\Monopolizers.Repositories\\Repositories\\IPricingPlansRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T06:05:24.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UpdatePricingPlanDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\DTO\\UpdatePricingPlanDTO.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\DTO\\UpdatePricingPlanDTO.cs",
+              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\DTO\\UpdatePricingPlanDTO.cs",
+              "RelativeToolTip": "..\\Monopolizers.Common\\DTO\\UpdatePricingPlanDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T06:00:26.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CreatePricingPlanDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\DTO\\CreatePricingPlanDTO.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\DTO\\CreatePricingPlanDTO.cs",
+              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\DTO\\CreatePricingPlanDTO.cs",
+              "RelativeToolTip": "..\\Monopolizers.Common\\DTO\\CreatePricingPlanDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T06:00:09.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PricingPlanDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\DTO\\PricingPlanDTO.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\DTO\\PricingPlanDTO.cs",
+              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\DTO\\PricingPlanDTO.cs",
+              "RelativeToolTip": "..\\Monopolizers.Common\\DTO\\PricingPlanDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T05:59:28.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AccessLevelEnum.cs",
+              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\Enums\\AccessLevelEnum.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\Enums\\AccessLevelEnum.cs",
+              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\Enums\\AccessLevelEnum.cs",
+              "RelativeToolTip": "..\\Monopolizers.Common\\Enums\\AccessLevelEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T05:58:17.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CloudinarySettings.cs",
+              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\DTO\\CloudinarySettings.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\DTO\\CloudinarySettings.cs",
+              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\DTO\\CloudinarySettings.cs",
+              "RelativeToolTip": "..\\Monopolizers.Common\\DTO\\CloudinarySettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T05:58:05.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DesignDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\DTO\\DesignDTO.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\DTO\\DesignDTO.cs",
+              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\DTO\\DesignDTO.cs",
+              "RelativeToolTip": "..\\Monopolizers.Common\\DTO\\DesignDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T05:58:02.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AssetDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\DTO\\AssetDTO.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\DTO\\AssetDTO.cs",
+              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\DTO\\AssetDTO.cs",
+              "RelativeToolTip": "..\\Monopolizers.Common\\DTO\\AssetDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T05:57:56.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CardDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\DTO\\CardDTO.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\DTO\\CardDTO.cs",
+              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\DTO\\CardDTO.cs",
+              "RelativeToolTip": "..\\Monopolizers.Common\\DTO\\CardDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T05:56:58.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CardCustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\UserControllers\\CardCustomerController.cs",
+              "RelativeDocumentMoniker": "UserControllers\\CardCustomerController.cs",
+              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\UserControllers\\CardCustomerController.cs",
+              "RelativeToolTip": "UserControllers\\CardCustomerController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAA3wDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T05:55:12.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlanController.cs",
+              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\Controllers\\PlanController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PlanController.cs",
+              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\Controllers\\PlanController.cs",
+              "RelativeToolTip": "Controllers\\PlanController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAswE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T05:53:46.057Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "WalletController.cs",
-              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\UserControllers\\WalletController.cs",
-              "RelativeDocumentMoniker": "UserControllers\\WalletController.cs",
-              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\UserControllers\\WalletController.cs",
-              "RelativeToolTip": "UserControllers\\WalletController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAATAAAAAAAAAA==",
+              "Title": "IPlanService.cs",
+              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Contract\\IPlanService.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Contract\\IPlanService.cs",
+              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Contract\\IPlanService.cs",
+              "RelativeToolTip": "..\\Monopolizers.Services\\Contract\\IPlanService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA0wBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T13:49:50.329Z",
+              "WhenOpened": "2025-06-10T05:53:43.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlanService.cs",
+              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Implementation\\PlanService.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Implementation\\PlanService.cs",
+              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Implementation\\PlanService.cs",
+              "RelativeToolTip": "..\\Monopolizers.Services\\Implementation\\PlanService.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAkwHkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T05:53:39.746Z",
               "EditorCaption": ""
             }
           ]

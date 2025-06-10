@@ -656,6 +656,106 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Monopolizers.API.Controllers.PlanController",
+    "Method": "Get",
+    "RelativePath": "api/Plan/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.API.Controllers.PlanController",
+    "Method": "GetAll",
+    "RelativePath": "api/Plan/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.API.Controllers.PlanController",
+    "Method": "BuyPlan",
+    "RelativePath": "api/Plan/buy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Monopolizers.Common.DTO.BuyPlanRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.API.Controllers.PlanController",
+    "Method": "Create",
+    "RelativePath": "api/Plan/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Monopolizers.Common.DTO.CreatePricingPlanDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.API.Controllers.PlanController",
+    "Method": "GetCurrentPlan",
+    "RelativePath": "api/Plan/current",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.API.Controllers.PlanController",
+    "Method": "Delete",
+    "RelativePath": "api/Plan/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.API.Controllers.PlanController",
+    "Method": "Update",
+    "RelativePath": "api/Plan/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Monopolizers.Common.DTO.UpdatePricingPlanDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Monopolizers.API.Controllers.UploadController",
     "Method": "UploadMedia",
     "RelativePath": "api/Upload/upload",
