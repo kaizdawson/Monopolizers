@@ -8,14 +8,14 @@ using Monopolizers.Service.Contract;
 
 namespace Monopolizers.API.AdminController
 {
-    [Authorize(Roles = AppRole.Admin)]
-    [Route("api/admin/cards")]
+    [Authorize(Roles = AppRole.Manager)]
+    [Route("api/manager/cards")]
     [ApiController]
-    public class CardAdminController : ControllerBase
+    public class CardManagerController : ControllerBase
     {
         private readonly ICardService _service;
 
-        public CardAdminController(ICardService service)
+        public CardManagerController(ICardService service)
         {
             _service = service;
         }

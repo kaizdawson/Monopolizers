@@ -9,14 +9,14 @@ using Monopolizers.Service.Implementation;
 
 namespace Monopolizers.API.AdminController
 {
-    [Authorize(Roles = AppRole.Admin)]
-    [Route("api/admin/typecards")]
+    [Authorize(Roles = AppRole.Manager)]
+    [Route("api/manager/typecards")]
     [ApiController]
-    public class TypeCardAdminController : ControllerBase
+    public class TypeCardManagerController : ControllerBase
     {
         private readonly ITypeCardService _service;
 
-        public TypeCardAdminController(ITypeCardService service)
+        public TypeCardManagerController(ITypeCardService service)
         {
             _service = service;
         }

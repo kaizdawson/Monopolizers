@@ -40,6 +40,9 @@ builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 builder.Services.AddScoped<IWalletRepository, WalletRepository>();
 builder.Services.AddScoped<IWalletService, WalletService>();
 builder.Services.AddScoped<IVnPayService, VnPayService>();
+builder.Services.AddScoped<IPricingPlansRepository, PricingPlansRepository>();
+builder.Services.AddScoped<IPlanService, PlanService>();
+builder.Services.AddScoped<IPlanPurchaseRepository, PlanPurchaseRepository>();
 
 
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>

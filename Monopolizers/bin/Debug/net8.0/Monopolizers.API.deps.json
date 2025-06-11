@@ -1442,6 +1442,7 @@
       },
       "Monopolizers.Service/1.0.0": {
         "dependencies": {
+          "CloudinaryDotNet": "1.27.5",
           "Monopolizers.Common": "1.0.0",
           "Monopolizers.Repository": "1.0.0"
         },
