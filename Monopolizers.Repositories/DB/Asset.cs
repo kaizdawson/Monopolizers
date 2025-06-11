@@ -22,5 +22,7 @@ namespace Monopolizers.Repository.DB
         public string AccessLevel { get; set; }
         public string SourceUrl { get; set; }
         public DateTime UploadedAt { get; set; }
+        
+        public string Theme { get; set; } = null!;
     }
 }

@@ -13,5 +13,6 @@ namespace Monopolizers.Common.DTO
         public string Name { get; set; } = null!;
         public string AssetType { get; set; } = null!; // "image", "text"
         public string AccessLevel { get; set; } = null!; // "Basic", "Premium", "VIP"
+        public string Theme { get; set; } = null!;
     }
 }

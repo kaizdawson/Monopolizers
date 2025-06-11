@@ -10,18 +10,8 @@
       "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|d:\\exe202\\new folder\\monopolizers.services\\implementation\\assetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|d:\\exe202\\new folder\\monopolizers\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|d:\\exe202\\new folder\\monopolizers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|d:\\exe202\\new folder\\monopolizers.common\\dto\\cloudinarysettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|d:\\exe202\\new folder\\monopolizers.services\\contract\\iassetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|d:\\exe202\\new folder\\monopolizers\\usercontrollers\\assetcustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:usercontrollers\\assetcustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|d:\\exe202\\new folder\\monopolizers.common\\dto\\request\\bulkassetuploadrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -30,17 +20,13 @@
       "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|d:\\exe202\\new folder\\monopolizers.common\\dto\\assetuploaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|d:\\exe202\\new folder\\monopolizers.services\\contract\\iassetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|d:\\exe202\\new folder\\monopolizers.common\\dto\\assetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|d:\\exe202\\new folder\\monopolizers.repositories\\db\\asset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|d:\\exe202\\new folder\\monopolizers\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|d:\\exe202\\new folder\\monopolizers.common\\helpers\\approle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|d:\\exe202\\new folder\\monopolizers.common\\enums\\accesslevelenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,37 +36,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AssetManagerController.cs",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers\\ManagerController\\AssetManagerController.cs",
-              "RelativeDocumentMoniker": "ManagerController\\AssetManagerController.cs",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers\\ManagerController\\AssetManagerController.cs",
-              "RelativeToolTip": "ManagerController\\AssetManagerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T09:16:46.943Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAGYAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T09:08:13.302Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -90,35 +50,35 @@
               "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Contract\\IAssetService.cs",
               "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Services\\Contract\\IAssetService.cs",
               "RelativeToolTip": "..\\Monopolizers.Services\\Contract\\IAssetService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T09:04:53.624Z",
+              "WhenOpened": "2025-06-11T11:37:31.219Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BulkAssetUploadRequestDTO.cs",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Common\\DTO\\Request\\BulkAssetUploadRequestDTO.cs",
-              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\DTO\\Request\\BulkAssetUploadRequestDTO.cs",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Common\\DTO\\Request\\BulkAssetUploadRequestDTO.cs",
-              "RelativeToolTip": "..\\Monopolizers.Common\\DTO\\Request\\BulkAssetUploadRequestDTO.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwA0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AssetCustomerController.cs",
+              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers\\UserControllers\\AssetCustomerController.cs",
+              "RelativeDocumentMoniker": "UserControllers\\AssetCustomerController.cs",
+              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers\\UserControllers\\AssetCustomerController.cs",
+              "RelativeToolTip": "UserControllers\\AssetCustomerController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T09:04:34.131Z",
+              "WhenOpened": "2025-06-11T11:31:05.671Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AssetUploadDTO.cs",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Common\\DTO\\AssetUploadDTO.cs",
-              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\DTO\\AssetUploadDTO.cs",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Common\\DTO\\AssetUploadDTO.cs",
-              "RelativeToolTip": "..\\Monopolizers.Common\\DTO\\AssetUploadDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AssetManagerController.cs",
+              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers\\ManagerController\\AssetManagerController.cs",
+              "RelativeDocumentMoniker": "ManagerController\\AssetManagerController.cs",
+              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers\\ManagerController\\AssetManagerController.cs",
+              "RelativeToolTip": "ManagerController\\AssetManagerController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T09:04:03.336Z",
+              "WhenOpened": "2025-06-11T11:30:57.049Z",
               "EditorCaption": ""
             },
             {
@@ -129,87 +89,61 @@
               "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Implementation\\AssetService.cs",
               "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\AssetService.cs",
               "RelativeToolTip": "..\\Monopolizers.Services\\Implementation\\AssetService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAQwEsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAkwE0AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T08:11:07.565Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Asset.cs",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\DB\\Asset.cs",
-              "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\DB\\Asset.cs",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\DB\\Asset.cs",
-              "RelativeToolTip": "..\\Monopolizers.Repositories\\DB\\Asset.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T08:10:40.772Z",
+              "WhenOpened": "2025-06-11T11:30:16.543Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CloudinarySettings.cs",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Common\\DTO\\CloudinarySettings.cs",
-              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\DTO\\CloudinarySettings.cs",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Common\\DTO\\CloudinarySettings.cs",
-              "RelativeToolTip": "..\\Monopolizers.Common\\DTO\\CloudinarySettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Title": "AssetUploadDTO.cs",
+              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Common\\DTO\\AssetUploadDTO.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\DTO\\AssetUploadDTO.cs",
+              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Common\\DTO\\AssetUploadDTO.cs",
+              "RelativeToolTip": "..\\Monopolizers.Common\\DTO\\AssetUploadDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T08:10:03.127Z",
+              "WhenOpened": "2025-06-11T11:30:01.254Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UploadController.cs",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers\\Controllers\\UploadController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UploadController.cs",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers\\Controllers\\UploadController.cs",
-              "RelativeToolTip": "Controllers\\UploadController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAQwBMAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T08:01:54.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-11T07:37:38.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AppRole.cs",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Common\\Helpers\\AppRole.cs",
-              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\Helpers\\AppRole.cs",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Common\\Helpers\\AppRole.cs",
-              "RelativeToolTip": "..\\Monopolizers.Common\\Helpers\\AppRole.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T07:33:52.396Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AccessLevelEnum.cs",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Common\\Enums\\AccessLevelEnum.cs",
-              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\Enums\\AccessLevelEnum.cs",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Common\\Enums\\AccessLevelEnum.cs",
-              "RelativeToolTip": "..\\Monopolizers.Common\\Enums\\AccessLevelEnum.cs",
+              "DocumentIndex": 3,
+              "Title": "BulkAssetUploadRequestDTO.cs",
+              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Common\\DTO\\Request\\BulkAssetUploadRequestDTO.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\DTO\\Request\\BulkAssetUploadRequestDTO.cs",
+              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Common\\DTO\\Request\\BulkAssetUploadRequestDTO.cs",
+              "RelativeToolTip": "..\\Monopolizers.Common\\DTO\\Request\\BulkAssetUploadRequestDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T07:33:48.451Z",
+              "WhenOpened": "2025-06-11T11:29:48.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AssetDTO.cs",
+              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Common\\DTO\\AssetDTO.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\DTO\\AssetDTO.cs",
+              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Common\\DTO\\AssetDTO.cs",
+              "RelativeToolTip": "..\\Monopolizers.Common\\DTO\\AssetDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T11:27:56.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Asset.cs",
+              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\DB\\Asset.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\DB\\Asset.cs",
+              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\DB\\Asset.cs",
+              "RelativeToolTip": "..\\Monopolizers.Repositories\\DB\\Asset.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T11:27:49.562Z",
               "EditorCaption": ""
             }
           ]

@@ -53,7 +53,8 @@ namespace Monopolizers.Service.Implementation
                     AccessLevel = item.AccessLevel,
                     SourceUrl = uploadResult.SecureUrl.ToString(),
                     UploadedAt = DateTime.UtcNow,
-                    UserId = userId
+                    UserId = userId,
+                    Theme = item.Theme,
                 };
 
                 uploadedAssets.Add(asset);
@@ -67,6 +68,34 @@ namespace Monopolizers.Service.Implementation
                 IsSucess = true,
                 BusinessCode = BusinessCode.CREATE_SUCCESS,
                 message = $"{uploadedAssets.Count} assets uploaded successfully."
+            };
+        }
+
+        public async Task<ResponseDTO> FilterAssetsAsync(string? theme, string? assetType)
+        {
+            var query = _assetRepo.GetQueryable();
+
+            if (!string.IsNullOrWhiteSpace(theme))
+                query = query.Where(a => a.Theme.ToLower() == theme.ToLower());
+
+            if (!string.IsNullOrWhiteSpace(assetType))
+                query = query.Where(a => a.AssetType.ToLower() == assetType.ToLower());
+
+            var filteredAssets = await query.ToListAsync();
+
+            return new ResponseDTO
+            {
+                IsSucess = true,
+                BusinessCode = BusinessCode.GET_DATA_SUCCESSFULLY,
+                Data = filteredAssets.Select(a => new AssetDTO
+                {
+                    AssetId = a.AssetId,
+                    Name = a.Name,
+                    AssetType = a.AssetType,
+                    AccessLevel = a.AccessLevel,
+                    SourceUrl = a.SourceUrl,
+                    Theme = a.Theme
+                })
             };
         }
 
@@ -84,7 +113,8 @@ namespace Monopolizers.Service.Implementation
                     Name = a.Name,
                     AssetType = a.AssetType,
                     SourceUrl = a.SourceUrl,
-                    AccessLevel = a.AccessLevel
+                    AccessLevel = a.AccessLevel,
+                    Theme = a.Theme
                 })
             };
         }

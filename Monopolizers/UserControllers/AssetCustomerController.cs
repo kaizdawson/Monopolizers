@@ -20,5 +20,11 @@ namespace Monopolizers.API.UserControllers
             var res = await _service.GetAllAssetsAsync();
             return Ok(res);
         }
+        [HttpGet("filter")]
+        public async Task<IActionResult> FilterAssets([FromQuery] string? theme, [FromQuery] string? assetType)
+        {
+            var res = await _service.FilterAssetsAsync(theme, assetType);
+            return Ok(res);
+        }
     }
 }

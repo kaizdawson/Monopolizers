@@ -194,6 +194,27 @@
         }
       }
     },
+    "/api/customer/assets/filter": {
+      "get": {
+        "tags": [
+          "AssetCustomer"
+        ],
+        "parameters": [
+          {
+            "name": "theme",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/manager/assets/bulk-import": {
       "post": {
         "tags": [
@@ -1318,6 +1339,10 @@
             "nullable": true
           },
           "accessLevel": {
+            "type": "string",
+            "nullable": true
+          },
+          "theme": {
             "type": "string",
             "nullable": true
           }

@@ -12,8 +12,8 @@ using Monopolizers.Repository.DB;
 namespace Monopolizers.Repository.Migrations
 {
     [DbContext(typeof(CardARContext))]
-    [Migration("20250607080249_AddUserSavedCard")]
-    partial class AddUserSavedCard
+    [Migration("20250611111416_SyncWithExistingUserSavedCard")]
+    partial class SyncWithExistingUserSavedCard
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -271,6 +271,10 @@ namespace Monopolizers.Repository.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Theme")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("UploadedAt")
                         .HasColumnType("datetime2");
 
@@ -517,7 +521,7 @@ namespace Monopolizers.Repository.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("UserSavedCards");
+                    b.ToTable("UserSavedCard");
                 });
 
             modelBuilder.Entity("Monopolizers.Repository.DB.Wallet", b =>

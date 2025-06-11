@@ -106,6 +106,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Monopolizers.API.UserControllers.AssetCustomerController",
+    "Method": "FilterByTheme",
+    "RelativePath": "api/customer/assets/filter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "theme",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Monopolizers.API.UserControllers.CardCustomerController",
     "Method": "GetAll",
     "RelativePath": "api/customer/cards",

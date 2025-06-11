@@ -13,5 +13,6 @@ namespace Monopolizers.Common.DTO
         public string AssetType { get; set; }
         public string SourceUrl { get; set; }
         public string AccessLevel { get; set; }
+        public string Theme { get; set; } = null!;
     }
 }

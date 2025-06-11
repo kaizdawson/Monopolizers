@@ -12,8 +12,8 @@ using Monopolizers.Repository.DB;
 namespace Monopolizers.Repository.Migrations
 {
     [DbContext(typeof(CardARContext))]
-    [Migration("20250607083855_Fix_UserSavedCardSchema")]
-    partial class Fix_UserSavedCardSchema
+    [Migration("20250611111450_AddThemeToAsset")]
+    partial class AddThemeToAsset
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -268,6 +268,10 @@ namespace Monopolizers.Repository.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SourceUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Theme")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

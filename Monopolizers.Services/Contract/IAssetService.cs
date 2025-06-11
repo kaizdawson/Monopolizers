@@ -12,5 +12,6 @@ namespace Monopolizers.Service.Contract
     {
         Task<ResponseDTO> GetAllAssetsAsync();
         Task<ResponseDTO> BulkImportAssetsAsync(BulkAssetUploadRequestDTO dto, string userId);
+        Task<ResponseDTO> FilterAssetsAsync(string? theme, string? assetType);
     }
 }
