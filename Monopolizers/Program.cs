@@ -26,6 +26,7 @@ builder.Services.AddScoped<ICardService, CardService>();
 builder.Services.AddScoped<ITypeCardService, TypeCardService>();
 builder.Services.AddScoped<IAssetService, AssetService>();
 builder.Services.AddScoped<IDesignService, DesignService>();
+builder.Services.AddScoped<ISavedCardService, SavedCardService>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 

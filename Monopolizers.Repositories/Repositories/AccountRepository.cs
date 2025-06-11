@@ -66,6 +66,7 @@ namespace Monopolizers.Repository.Repositories
             var authClaims = new List<Claim>
         {
             new Claim(ClaimTypes.NameIdentifier, user.Id),
+            new Claim("id", user.Id),
             new Claim(ClaimTypes.Name, model.Username),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
         };
