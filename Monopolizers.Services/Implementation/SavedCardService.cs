@@ -145,7 +145,8 @@ namespace Monopolizers.Service.Implementation
             {
                 IsSucess = true,
                 BusinessCode = BusinessCode.CREATE_SUCCESS,
-                message = "Thiệp đã được lưu thành công."
+                message = "Thiệp đã được lưu thành công.",
+                Data = new { id = entity.Id }
             };
         }
     }
