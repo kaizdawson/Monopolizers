@@ -327,3 +327,9 @@ D:\EXE202\New folder\Monopolizers\obj\Debug\net8.0\refint\Monopolizers.API.dll
 D:\EXE202\New folder\Monopolizers\obj\Debug\net8.0\Monopolizers.API.pdb
 D:\EXE202\New folder\Monopolizers\obj\Debug\net8.0\Monopolizers.API.genruntimeconfig.cache
 D:\EXE202\New folder\Monopolizers\obj\Debug\net8.0\ref\Monopolizers.API.dll
+D:\EXE202\New folder\Monopolizers\bin\Debug\net8.0\publish\web.config
+D:\EXE202\New folder\Monopolizers\bin\Debug\net8.0\publish\appsettings.Development.json
+D:\EXE202\New folder\Monopolizers\bin\Debug\net8.0\publish\appsettings.json
+D:\EXE202\New folder\Monopolizers\bin\Debug\net8.0\publish\Monopolizers.API.deps.json
+D:\EXE202\New folder\Monopolizers\bin\Debug\net8.0\publish\Monopolizers.API.runtimeconfig.json
+D:\EXE202\New folder\Monopolizers\bin\Debug\net8.0\publish\Monopolizers.API.staticwebassets.endpoints.json

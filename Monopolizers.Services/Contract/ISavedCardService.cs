@@ -13,6 +13,7 @@ namespace Monopolizers.Service.Contract
         Task<ResponseDTO> GetMySavedCardsAsync(string userId);
         Task<ResponseDTO> GetSavedCardByIdAsync(int id, string userId);
         Task<ResponseDTO> DeleteSavedCardAsync(int id, string userId);
+        Task<ResponseDTO> GetSavedCardByIdForPublicAsync(int id);
     }
 }
 

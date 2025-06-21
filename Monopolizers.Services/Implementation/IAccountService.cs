@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Monopolizers.Common.DTO;
 using Monopolizers.Repository.Models;
 using Monopolizers.Service.DTOs;
 using System;
