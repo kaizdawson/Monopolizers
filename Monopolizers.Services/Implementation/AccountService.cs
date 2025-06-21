@@ -10,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Monopolizers.Common.Helpers;
+using Monopolizers.Common.DTO;
+using ResponseDTO = Monopolizers.Common.DTO.ResponseDTO;
 
 namespace Monopolizers.Service.Services
 {
@@ -17,11 +19,13 @@ namespace Monopolizers.Service.Services
     {
         private readonly IAccountRepository _accountRepository;
         private readonly CardARContext _context;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public AccountService(IAccountRepository accountRepository, CardARContext context)
+        public AccountService(IAccountRepository accountRepository, CardARContext context, UserManager<ApplicationUser> userManager)
         {
             _accountRepository = accountRepository;
             _context = context;
+            _userManager = userManager;
         }
 
         public async Task<IdentityResult> SignUpWithRoleAsync(SignUpModel model, string roleName)
@@ -71,7 +75,7 @@ namespace Monopolizers.Service.Services
             return await _accountRepository.BanUserAsync(userId);
         }
 
-
+    
     }
 
 

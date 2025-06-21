@@ -100,6 +100,34 @@ namespace Monopolizers.Service.Implementation
             };
         }
 
+        public async Task<ResponseDTO> GetSavedCardByIdForPublicAsync(int id)
+        {
+          var item = await _repository.GetById(id);
+            if (item == null)
+            {
+                return new ResponseDTO
+                {
+                    IsSucess = false,
+                    BusinessCode = BusinessCode.NOT_FOUND,
+                    message = "Không tìm thấy thiệp."
+                };
+            }
+            var dto = new UserSavedCardDTO
+            {
+                Id = item.Id,
+                CardId = item.CardId,
+                Background = item.Background,
+                ElementsJson = item.ElementsJson,
+                SavedAt = item.SavedAt
+            };
+            return new ResponseDTO
+            {
+                IsSucess = true,
+                BusinessCode = BusinessCode.GET_DATA_SUCCESSFULLY,
+                Data = dto
+            };
+        }
+
         public async Task<ResponseDTO> SaveCardAsync(SaveCardDTO dto, string userId)
         {
             var entity = new UserSavedCard

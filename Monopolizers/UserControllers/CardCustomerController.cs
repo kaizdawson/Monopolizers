@@ -46,5 +46,10 @@ namespace Monopolizers.API.UserControllers
             var level = AccessLevelHelper.GetAccessLevelFromClaims(User);
             return await _service.CheckDesignPermissionAsync(cardId, level);
         }
+        [HttpGet("ping")]
+        public IActionResult Ping()
+        {
+            return Ok("API OK");
+        }
     }
 }

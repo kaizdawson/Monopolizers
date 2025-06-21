@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Monopolizers.Common.DTO;
 using Monopolizers.Service.Contract;
@@ -44,5 +45,13 @@ namespace Monopolizers.API.UserControllers
             var res = await _service.DeleteSavedCardAsync(id, userId);
             return Ok(res);
         }
+        [AllowAnonymous]
+        [HttpGet("view/{id}")]
+        public async Task<IActionResult> GetPublicById(int id)
+        {
+            var res = await _service.GetSavedCardByIdForPublicAsync(id);
+            return Ok(res);
+        }
+
     }
 }

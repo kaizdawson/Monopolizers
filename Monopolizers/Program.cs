@@ -27,6 +27,7 @@ builder.Services.AddScoped<ITypeCardService, TypeCardService>();
 builder.Services.AddScoped<IAssetService, AssetService>();
 builder.Services.AddScoped<IDesignService, DesignService>();
 builder.Services.AddScoped<ISavedCardService, SavedCardService>();
+builder.Services.AddScoped<IAdminService, AdminService>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 
@@ -102,6 +103,9 @@ cloudinary.Api.Secure = true;
 
 builder.Services.AddSingleton(cloudinary);
 
+var jwtSecret = builder.Configuration["JWT:Secret"];
+if (string.IsNullOrEmpty(jwtSecret))
+    throw new Exception("❌ JWT:Secret is not configured in appsettings or Azure App Settings!");
 
 builder.Services.AddAuthentication(options =>
 {
@@ -143,7 +147,7 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
