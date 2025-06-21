@@ -51,8 +51,10 @@ namespace Monopolizers.Repository.Repositories
 
         public async Task<string> SignInAsync(SignInModel model)
         {
-            var user = await userManager.FindByNameAsync(model.Username);
-            
+            var user = await userManager.Users
+        .Include(u => u.PricingPlans)
+        .FirstOrDefaultAsync(u => u.UserName == model.Username);
+
             if (user == null)
                 return "Không tìm thấy tài khoản này!";
 
@@ -62,12 +64,14 @@ namespace Monopolizers.Repository.Repositories
             var result = await signInManager.CheckPasswordSignInAsync(user, model.Password, false);
             if (!result.Succeeded)
                 return "Sai Mật Khẩu";
+            var accessLevel = user?.PricingPlans?.AccessLevel ?? "Basic";
 
             var authClaims = new List<Claim>
         {
             new Claim(ClaimTypes.NameIdentifier, user.Id),
             new Claim("id", user.Id),
             new Claim(ClaimTypes.Name, model.Username),
+             new Claim("accessLevel", accessLevel),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
         };
 
