@@ -3,54 +3,15 @@
   "WorkspaceRootPath": "D:\\EXE202\\New folder\\Monopolizers\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|d:\\exe202\\new folder\\monopolizers.services\\implementation\\cardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|d:\\exe202\\new folder\\monopolizers\\usercontrollers\\cardcustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:usercontrollers\\cardcustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|d:\\exe202\\new folder\\monopolizers.repositories\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|d:\\exe202\\new folder\\monopolizers.services\\implementation\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|d:\\exe202\\new folder\\monopolizers.services\\helpers\\accesslevelhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|d:\\exe202\\new folder\\monopolizers.services\\implementation\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|d:\\exe202\\new folder\\monopolizers\\managercontroller\\cardmanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:managercontroller\\cardmanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|d:\\exe202\\new folder\\monopolizers\\managercontroller\\assetmanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:managercontroller\\assetmanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|d:\\exe202\\new folder\\monopolizers\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|d:\\exe202\\new folder\\monopolizers\\usercontrollers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:usercontrollers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|d:\\exe202\\new folder\\monopolizers.services\\implementation\\savedcardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|d:\\exe202\\new folder\\monopolizers\\usercontrollers\\savedcardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:usercontrollers\\savedcardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|d:\\exe202\\new folder\\monopolizers\\usercontrollers\\designcustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:usercontrollers\\designcustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|d:\\exe202\\new folder\\monopolizers\\usercontrollers\\assetcustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:usercontrollers\\assetcustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|d:\\exe202\\new folder\\monopolizers.common\\enums\\accesslevelenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|d:\\exe202\\new folder\\monopolizers\\managercontroller\\cardmanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:managercontroller\\cardmanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -60,7 +21,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -72,184 +33,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AccountRepository.cs",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\Repositories\\AccountRepository.cs",
-              "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\Repositories\\AccountRepository.cs",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\Repositories\\AccountRepository.cs",
-              "RelativeToolTip": "..\\Monopolizers.Repositories\\Repositories\\AccountRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "SavedCardService.cs",
+              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\SavedCardService.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Implementation\\SavedCardService.cs",
+              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\SavedCardService.cs",
+              "RelativeToolTip": "..\\Monopolizers.Services\\Implementation\\SavedCardService.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAAAJYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T10:20:39.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AccountService.cs",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\AccountService.cs",
-              "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Implementation\\AccountService.cs",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\AccountService.cs",
-              "RelativeToolTip": "..\\Monopolizers.Services\\Implementation\\AccountService.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAuwEEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T10:19:34.625Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CardManagerController.cs",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers\\ManagerController\\CardManagerController.cs",
-              "RelativeDocumentMoniker": "ManagerController\\CardManagerController.cs",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers\\ManagerController\\CardManagerController.cs",
-              "RelativeToolTip": "ManagerController\\CardManagerController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T10:19:11.719Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AssetManagerController.cs",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers\\ManagerController\\AssetManagerController.cs",
-              "RelativeDocumentMoniker": "ManagerController\\AssetManagerController.cs",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers\\ManagerController\\AssetManagerController.cs",
-              "RelativeToolTip": "ManagerController\\AssetManagerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T10:19:02.52Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T10:18:55.885Z",
+              "WhenOpened": "2025-06-21T17:36:27.661Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CardCustomerController.cs",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers\\UserControllers\\CardCustomerController.cs",
-              "RelativeDocumentMoniker": "UserControllers\\CardCustomerController.cs",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers\\UserControllers\\CardCustomerController.cs",
-              "RelativeToolTip": "UserControllers\\CardCustomerController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAiwCwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T09:44:02.203Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CardService.cs",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\CardService.cs",
-              "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Implementation\\CardService.cs",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\CardService.cs",
-              "RelativeToolTip": "..\\Monopolizers.Services\\Implementation\\CardService.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwEQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T09:52:40.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IAccountService.cs",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\IAccountService.cs",
-              "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Implementation\\IAccountService.cs",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\IAccountService.cs",
-              "RelativeToolTip": "..\\Monopolizers.Services\\Implementation\\IAccountService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T10:19:55.277Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AccessLevelHelper.cs",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Services\\Helpers\\AccessLevelHelper.cs",
-              "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Helpers\\AccessLevelHelper.cs",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Services\\Helpers\\AccessLevelHelper.cs",
-              "RelativeToolTip": "..\\Monopolizers.Services\\Helpers\\AccessLevelHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T10:20:11.898Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "WalletController.cs",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers\\UserControllers\\WalletController.cs",
-              "RelativeDocumentMoniker": "UserControllers\\WalletController.cs",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers\\UserControllers\\WalletController.cs",
-              "RelativeToolTip": "UserControllers\\WalletController.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T10:18:42.462Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "SavedCardController.cs",
               "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers\\UserControllers\\SavedCardController.cs",
               "RelativeDocumentMoniker": "UserControllers\\SavedCardController.cs",
               "ToolTip": "D:\\EXE202\\New folder\\Monopolizers\\UserControllers\\SavedCardController.cs",
               "RelativeToolTip": "UserControllers\\SavedCardController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAiwDkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T10:18:40.066Z",
+              "WhenOpened": "2025-06-21T17:34:23.906Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DesignCustomerController.cs",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers\\UserControllers\\DesignCustomerController.cs",
-              "RelativeDocumentMoniker": "UserControllers\\DesignCustomerController.cs",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers\\UserControllers\\DesignCustomerController.cs",
-              "RelativeToolTip": "UserControllers\\DesignCustomerController.cs",
+              "DocumentIndex": 2,
+              "Title": "CardManagerController.cs",
+              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers\\ManagerController\\CardManagerController.cs",
+              "RelativeDocumentMoniker": "ManagerController\\CardManagerController.cs",
+              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers\\ManagerController\\CardManagerController.cs",
+              "RelativeToolTip": "ManagerController\\CardManagerController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T10:18:37.098Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AssetCustomerController.cs",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers\\UserControllers\\AssetCustomerController.cs",
-              "RelativeDocumentMoniker": "UserControllers\\AssetCustomerController.cs",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers\\UserControllers\\AssetCustomerController.cs",
-              "RelativeToolTip": "UserControllers\\AssetCustomerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T10:18:32.874Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AccessLevelEnum.cs",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Common\\Enums\\AccessLevelEnum.cs",
-              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\Enums\\AccessLevelEnum.cs",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Common\\Enums\\AccessLevelEnum.cs",
-              "RelativeToolTip": "..\\Monopolizers.Common\\Enums\\AccessLevelEnum.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T10:07:38.697Z",
+              "WhenOpened": "2025-06-21T17:34:16.712Z",
               "EditorCaption": ""
             }
           ]
