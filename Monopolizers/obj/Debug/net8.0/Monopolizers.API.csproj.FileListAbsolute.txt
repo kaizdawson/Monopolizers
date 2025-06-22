@@ -333,3 +333,9 @@ D:\EXE202\New folder\Monopolizers\bin\Debug\net8.0\publish\appsettings.json
 D:\EXE202\New folder\Monopolizers\bin\Debug\net8.0\publish\Monopolizers.API.deps.json
 D:\EXE202\New folder\Monopolizers\bin\Debug\net8.0\publish\Monopolizers.API.runtimeconfig.json
 D:\EXE202\New folder\Monopolizers\bin\Debug\net8.0\publish\Monopolizers.API.staticwebassets.endpoints.json
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\publish\web.config
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\publish\appsettings.Development.json
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\publish\appsettings.json
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\publish\Monopolizers.API.deps.json
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\publish\Monopolizers.API.runtimeconfig.json
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\publish\Monopolizers.API.staticwebassets.endpoints.json

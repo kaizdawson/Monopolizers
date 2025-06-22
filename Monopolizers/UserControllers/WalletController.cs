@@ -76,6 +76,12 @@ namespace Monopolizers.API.UserControllers
         {
             try
             {
+                var responseCode = Request.Query["vnp_ResponseCode"].ToString();
+                if (responseCode != "00")
+                {
+                    return Redirect("https://monopolizers.vercel.app/wallet");
+                }
+
                 var response = _vnPayService.PaymentExecute(Request.Query);
                 if (!response.Success)
                 {
