@@ -1,21 +1,36 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\",
+  "WorkspaceRootPath": "D:\\EXE202\\New folder\\Monopolizers\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers\\usercontrollers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|d:\\exe202\\new folder\\monopolizers\\usercontrollers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:usercontrollers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\SavedCardService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|d:\\exe202\\new folder\\monopolizers.services\\implementation\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers\\usercontrollers\\savedcardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:usercontrollers\\savedcardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|d:\\exe202\\new folder\\monopolizers.repositories\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers\\managercontroller\\cardmanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:managercontroller\\cardmanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|d:\\exe202\\new folder\\monopolizers.repositories\\models\\signinmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|d:\\exe202\\new folder\\monopolizers.common\\helpers\\iemailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|d:\\exe202\\new folder\\monopolizers.common\\helpers\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|d:\\exe202\\new folder\\monopolizers.services\\implementation\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|d:\\exe202\\new folder\\monopolizers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|d:\\exe202\\new folder\\monopolizers\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,57 +44,121 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "WalletController.cs",
-              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\UserControllers\\WalletController.cs",
+              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers\\UserControllers\\WalletController.cs",
               "RelativeDocumentMoniker": "UserControllers\\WalletController.cs",
-              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\UserControllers\\WalletController.cs",
+              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers\\UserControllers\\WalletController.cs",
               "RelativeToolTip": "UserControllers\\WalletController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAgwFMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAwwGYAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T09:21:56.985Z",
+              "WhenOpened": "2025-06-25T13:39:09.932Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SavedCardService.cs",
-              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\SavedCardService.cs",
-              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\SavedCardService.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T17:36:27.661Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SavedCardController.cs",
-              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\UserControllers\\SavedCardController.cs",
-              "RelativeDocumentMoniker": "UserControllers\\SavedCardController.cs",
-              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\UserControllers\\SavedCardController.cs",
-              "RelativeToolTip": "UserControllers\\SavedCardController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAiwDkAAAAAAAAAAAAAAA==",
+              "Title": "AccountRepository.cs",
+              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\Repositories\\AccountRepository.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\Repositories\\AccountRepository.cs",
+              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\Repositories\\AccountRepository.cs",
+              "RelativeToolTip": "..\\Monopolizers.Repositories\\Repositories\\AccountRepository.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAcwFsAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T17:34:23.906Z"
+              "WhenOpened": "2025-06-25T11:42:43.878Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CardManagerController.cs",
-              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\ManagerController\\CardManagerController.cs",
-              "RelativeDocumentMoniker": "ManagerController\\CardManagerController.cs",
-              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\ManagerController\\CardManagerController.cs",
-              "RelativeToolTip": "ManagerController\\CardManagerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "SignInModel.cs",
+              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\Models\\SignInModel.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\Models\\SignInModel.cs",
+              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\Models\\SignInModel.cs",
+              "RelativeToolTip": "..\\Monopolizers.Repositories\\Models\\SignInModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T17:34:16.712Z"
+              "WhenOpened": "2025-06-25T11:41:44.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\AccountService.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Implementation\\AccountService.cs",
+              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\AccountService.cs",
+              "RelativeToolTip": "..\\Monopolizers.Services\\Implementation\\AccountService.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAA5wFkAAAB+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T08:53:28.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\EmailService.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Implementation\\EmailService.cs",
+              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\EmailService.cs",
+              "RelativeToolTip": "..\\Monopolizers.Services\\Implementation\\EmailService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAqwBUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T08:10:36.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T08:08:46.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-25T08:08:17.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmailSettings.cs",
+              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Common\\Helpers\\EmailSettings.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\Helpers\\EmailSettings.cs",
+              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Common\\Helpers\\EmailSettings.cs",
+              "RelativeToolTip": "..\\Monopolizers.Common\\Helpers\\EmailSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T08:07:39.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IEmailSettings.cs",
+              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Common\\Helpers\\IEmailSettings.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Common\\Helpers\\IEmailSettings.cs",
+              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Common\\Helpers\\IEmailSettings.cs",
+              "RelativeToolTip": "..\\Monopolizers.Common\\Helpers\\IEmailSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T08:07:04.598Z"
             }
           ]
         }

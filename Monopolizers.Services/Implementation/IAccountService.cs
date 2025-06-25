@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Monopolizers.Common.DTO;
+using Monopolizers.Common.DTO.Request;
 using Monopolizers.Repository.Models;
 using Monopolizers.Service.DTOs;
 using System;
@@ -16,5 +17,7 @@ namespace Monopolizers.Service.Services
 
         Task<string> SignInAsync(SignInModel model);
         Task<bool> BanUserAsync(string userId);
+        Task<SimpleResponseDTO> ForgotPasswordAsync(ForgotPasswordRequestDTO dto);
+        Task<SimpleResponseDTO> ResetPasswordAsync(ResetPasswordRequestDTO dto);
     }
 }

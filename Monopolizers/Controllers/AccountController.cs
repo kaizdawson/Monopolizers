@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Monopolizers.Common.DTO.Request;
 using Monopolizers.Common.Helpers;
 using Monopolizers.Repository.DB;
 using Monopolizers.Repository.Models;
@@ -140,7 +141,19 @@ namespace Monopolizers.Controllers
                 Message = "Tài khoản đã bị khóa (Banned)."
             });
         }
-        
+        [HttpPost("forgot-password")]
+        public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordRequestDTO dto)
+        {
+            var result = await _accountService.ForgotPasswordAsync(dto);
+            return Ok(result);
+        }
+        [HttpPost("reset-password")]
+        public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordRequestDTO dto)
+        {
+            var result = await _accountService.ResetPasswordAsync(dto);
+            return Ok(result);
+        }
+
 
     }
 

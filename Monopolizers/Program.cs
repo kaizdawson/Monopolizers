@@ -3,9 +3,11 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Monopolizers.Common.DTO;
+using Monopolizers.Common.Helpers;
 using Monopolizers.Repository.Contract;
 using Monopolizers.Repository.DB;
 using Monopolizers.Repository.Implementation;
@@ -16,6 +18,8 @@ using Monopolizers.Service.Services;
 using System.Security.Claims;
 using System.Text;
 using System.Text.Json.Serialization;
+using Microsoft.Extensions.Options;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,6 +32,7 @@ builder.Services.AddScoped<IAssetService, AssetService>();
 builder.Services.AddScoped<IDesignService, DesignService>();
 builder.Services.AddScoped<ISavedCardService, SavedCardService>();
 builder.Services.AddScoped<IAdminService, AdminService>();
+builder.Services.AddScoped<IEmailService, EmailService>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 
@@ -143,6 +148,9 @@ builder.Services.AddCors(options =>
               .AllowAnyHeader(); // Cho phép tất cả các header
     });
 });
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+builder.Services.AddSingleton<IEmailSettings>(sp =>
+    sp.GetRequiredService<IOptions<EmailSettings>>().Value);
 
 var app = builder.Build();
 

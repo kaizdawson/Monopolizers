@@ -82,10 +82,14 @@ namespace Monopolizers.Repository.Repositories
             }
 
             var authKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT:Secret"]));
+
+            var expires = model.RememberMe
+                 ? DateTime.Now.AddDays(30)    // ✅ Lưu token lâu hơn nếu remember
+                 : DateTime.Now.AddMinutes(20); // ❌ Ngắn nếu không remember
             var token = new JwtSecurityToken(
                 issuer: configuration["JWT:ValidIssuer"],
                 audience: configuration["JWT:ValidAudience"],
-                expires: DateTime.Now.AddMinutes(20),
+                expires: expires,
                 claims: authClaims,
                 signingCredentials: new SigningCredentials(authKey, SecurityAlgorithms.HmacSha512Signature)
             );

@@ -103,7 +103,7 @@ namespace Monopolizers.API.UserControllers
                 if (result != "Success")
                     return BadRequest(new { Message = result });
 
-                var redirectUrl = $"http://localhost:5173/deposite" +
+                var redirectUrl = $"https://monopolizers.vercel.app/wallet" +
                                   $"?Status=Success" +
                                   $"&vnp_ResponseCode=00" +
                                   $"&vnp_Amount={vnpAmountRaw}" +
