@@ -249,6 +249,10 @@
             "CloudinaryDotNet": {
               "target": "Package",
               "version": "[1.27.5, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.12.1, )"
             }
           },
           "imports": [

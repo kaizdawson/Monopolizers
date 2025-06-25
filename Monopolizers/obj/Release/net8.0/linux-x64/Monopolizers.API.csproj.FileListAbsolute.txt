@@ -156,3 +156,7 @@ D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\refint\Monopolize
 D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\Monopolizers.API.pdb
 D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\Monopolizers.API.genruntimeconfig.cache
 D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\ref\Monopolizers.API.dll
+D:\EXE202\New folder\Monopolizers\bin\Release\net8.0\linux-x64\BouncyCastle.Cryptography.dll
+D:\EXE202\New folder\Monopolizers\bin\Release\net8.0\linux-x64\MailKit.dll
+D:\EXE202\New folder\Monopolizers\bin\Release\net8.0\linux-x64\MimeKit.dll
+D:\EXE202\New folder\Monopolizers\bin\Release\net8.0\linux-x64\System.Security.Cryptography.Pkcs.dll

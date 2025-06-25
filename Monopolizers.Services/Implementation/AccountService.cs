@@ -87,7 +87,7 @@ namespace Monopolizers.Service.Services
                 return new SimpleResponseDTO(false, "Email không tồn tại");
 
             var token = await _userManager.GeneratePasswordResetTokenAsync(user);
-            var resetLink = $"https://yourfrontend.com/reset-password?email={dto.Email}&token={HttpUtility.UrlEncode(token)}";
+            var resetLink = $"https://monopolizers.vercel.app/reset-password?email={dto.Email}&token={HttpUtility.UrlEncode(token)}";
 
             await _emailService.SendEmailAsync(new EmailDTO
             {

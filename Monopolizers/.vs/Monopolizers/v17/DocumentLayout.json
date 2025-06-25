@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\EXE202\\New folder\\Monopolizers\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|d:\\exe202\\new folder\\monopolizers\\usercontrollers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:usercontrollers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|d:\\exe202\\new folder\\monopolizers.services\\implementation\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|d:\\exe202\\new folder\\monopolizers.services\\implementation\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|d:\\exe202\\new folder\\monopolizers\\usercontrollers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:usercontrollers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|d:\\exe202\\new folder\\monopolizers.repositories\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -40,7 +40,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -52,16 +52,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "WalletController.cs",
               "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers\\UserControllers\\WalletController.cs",
               "RelativeDocumentMoniker": "UserControllers\\WalletController.cs",
               "ToolTip": "D:\\EXE202\\New folder\\Monopolizers\\UserControllers\\WalletController.cs",
               "RelativeToolTip": "UserControllers\\WalletController.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAwwGYAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAgwF4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T13:39:09.932Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T13:39:09.932Z"
             },
             {
               "$type": "Document",
@@ -89,13 +88,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AccountService.cs",
               "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\AccountService.cs",
               "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Implementation\\AccountService.cs",
               "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\AccountService.cs",
               "RelativeToolTip": "..\\Monopolizers.Services\\Implementation\\AccountService.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAA5wFkAAAB+AAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAqwFkAAACFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-25T08:53:28.621Z",
               "EditorCaption": ""

@@ -6,6 +6,10 @@
       "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|d:\\exe202\\new folder\\monopolizers.services\\implementation\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|d:\\exe202\\new folder\\monopolizers\\usercontrollers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:usercontrollers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|d:\\exe202\\new folder\\monopolizers.repositories\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -36,7 +40,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,6 +53,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "WalletController.cs",
+              "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers\\UserControllers\\WalletController.cs",
+              "RelativeDocumentMoniker": "UserControllers\\WalletController.cs",
+              "ToolTip": "D:\\EXE202\\New folder\\Monopolizers\\UserControllers\\WalletController.cs",
+              "RelativeToolTip": "UserControllers\\WalletController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAgwF4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T13:39:09.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AccountRepository.cs",
               "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\Repositories\\AccountRepository.cs",
               "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\Repositories\\AccountRepository.cs",
@@ -56,12 +73,11 @@
               "RelativeToolTip": "..\\Monopolizers.Repositories\\Repositories\\AccountRepository.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAAcwFsAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T11:42:43.878Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T11:42:43.878Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SignInModel.cs",
               "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\Models\\SignInModel.cs",
               "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\Models\\SignInModel.cs",
@@ -69,8 +85,7 @@
               "RelativeToolTip": "..\\Monopolizers.Repositories\\Models\\SignInModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T11:41:44.942Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T11:41:44.942Z"
             },
             {
               "$type": "Document",
@@ -80,14 +95,14 @@
               "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Implementation\\AccountService.cs",
               "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\AccountService.cs",
               "RelativeToolTip": "..\\Monopolizers.Services\\Implementation\\AccountService.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAowFkAAAB+AAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAqwFkAAACFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-25T08:53:28.621Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "EmailService.cs",
               "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\EmailService.cs",
               "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Implementation\\EmailService.cs",
@@ -99,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -107,11 +122,12 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T08:08:46.31Z"
+              "WhenOpened": "2025-06-25T08:08:46.31Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -123,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "EmailSettings.cs",
               "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Common\\Helpers\\EmailSettings.cs",
               "RelativeDocumentMoniker": "..\\Monopolizers.Common\\Helpers\\EmailSettings.cs",
@@ -135,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "IEmailSettings.cs",
               "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Common\\Helpers\\IEmailSettings.cs",
               "RelativeDocumentMoniker": "..\\Monopolizers.Common\\Helpers\\IEmailSettings.cs",

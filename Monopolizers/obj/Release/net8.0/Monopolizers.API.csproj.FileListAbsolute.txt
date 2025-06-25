@@ -168,3 +168,8 @@ D:\EXE202\New folder\Monopolizers\bin\Release\net8.0\publish\Monopolizers.API.de
 D:\EXE202\New folder\Monopolizers\bin\Release\net8.0\publish\Monopolizers.API.runtimeconfig.json
 D:\EXE202\New folder\Monopolizers\bin\Release\net8.0\publish\Monopolizers.API.staticwebassets.endpoints.json
 D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\staticwebassets.upToDateCheck.txt
+D:\EXE202\New folder\Monopolizers\bin\Release\net8.0\BouncyCastle.Cryptography.dll
+D:\EXE202\New folder\Monopolizers\bin\Release\net8.0\MailKit.dll
+D:\EXE202\New folder\Monopolizers\bin\Release\net8.0\MimeKit.dll
+D:\EXE202\New folder\Monopolizers\bin\Release\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\EXE202\New folder\Monopolizers\bin\Release\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

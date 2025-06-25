@@ -12,7 +12,9 @@ D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\Monopo
 D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\Monopolizers.API.pdb
 D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\Azure.Core.dll
 D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\Azure.Identity.dll
+D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\BouncyCastle.Cryptography.dll
 D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\CloudinaryDotNet.dll
+D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\MailKit.dll
 D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.AspNetCore.Cryptography.Internal.dll
 D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
@@ -43,6 +45,7 @@ D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\Micros
 D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.OpenApi.dll
 D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.SqlServer.Server.dll
 D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.Win32.SystemEvents.dll
+D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\MimeKit.dll
 D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\Newtonsoft.Json.dll
 D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
 D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -54,6 +57,7 @@ D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\System
 D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\System.Linq.Dynamic.Core.dll
 D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\System.Memory.Data.dll
 D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\System.Runtime.Caching.dll
+D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\System.Security.Cryptography.Pkcs.dll
 D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\System.Security.Cryptography.ProtectedData.dll
 D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\System.Security.Permissions.dll
 D:\EXE202\New folder\Monopolizers\obj\Release\net8.0\linux-x64\PubTmp\Out\System.Windows.Extensions.dll
