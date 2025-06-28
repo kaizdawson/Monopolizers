@@ -19,5 +19,6 @@ namespace Monopolizers.Service.Services
         Task<bool> BanUserAsync(string userId);
         Task<SimpleResponseDTO> ForgotPasswordAsync(ForgotPasswordRequestDTO dto);
         Task<SimpleResponseDTO> ResetPasswordAsync(ResetPasswordRequestDTO dto);
+        Task<SimpleResponseDTO> RefreshTokenAsync(RefreshTokenRequestDTO dto);
     }
 }

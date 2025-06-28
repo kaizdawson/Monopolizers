@@ -13,6 +13,7 @@ namespace Monopolizers.Repository.Repositories
         Task<IdentityResult> UpdateAsync(ApplicationUser user);
         Task<ApplicationUser?> FindByUsernameAsync(string username);
         Task<bool> BanUserAsync(string userId);
+       Task<string> RefreshTokenAsync(string oldToken);
 
     }
 }

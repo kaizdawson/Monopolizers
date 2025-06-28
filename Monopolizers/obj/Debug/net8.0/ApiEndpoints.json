@@ -33,6 +33,22 @@
   },
   {
     "ContainingType": "Monopolizers.Controllers.AccountController",
+    "Method": "RefreshToken",
+    "RelativePath": "api/Account/refresh-token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Monopolizers.Common.DTO.RefreshTokenRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.Controllers.AccountController",
     "Method": "ResetPassword",
     "RelativePath": "api/Account/reset-password",
     "HttpMethod": "POST",

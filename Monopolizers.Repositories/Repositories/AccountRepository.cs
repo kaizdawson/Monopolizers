@@ -118,6 +118,49 @@ namespace Monopolizers.Repository.Repositories
             return result.Succeeded;
         }
 
+        public async Task<string> RefreshTokenAsync(string oldToken)
+        {
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(oldToken);
+
+            var userId = jwtToken.Claims.FirstOrDefault(c => c.Type == "id")?.Value;
+            if (string.IsNullOrEmpty(userId))
+                return string.Empty;
+
+            var user = await userManager.Users
+                .Include(u => u.PricingPlans)
+                .FirstOrDefaultAsync(u => u.Id == userId);
+
+            if (user == null) return string.Empty;
+
+            var accessLevel = user.PricingPlans?.AccessLevel ?? "Basic";
+
+            var authClaims = new List<Claim>
+    {
+        new Claim(ClaimTypes.NameIdentifier, user.Id),
+        new Claim("id", user.Id),
+        new Claim(ClaimTypes.Name, user.UserName),
+        new Claim("accessLevel", accessLevel),
+        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+    };
+
+            var userRoles = await userManager.GetRolesAsync(user);
+            foreach (var role in userRoles)
+            {
+                authClaims.Add(new Claim(ClaimTypes.Role, role));
+            }
+
+            var authKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT:Secret"]));
+            var token = new JwtSecurityToken(
+                issuer: configuration["JWT:ValidIssuer"],
+                audience: configuration["JWT:ValidAudience"],
+                expires: DateTime.Now.AddMinutes(20),
+                claims: authClaims,
+                signingCredentials: new SigningCredentials(authKey, SecurityAlgorithms.HmacSha512Signature)
+            );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
     }
 
 }

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Monopolizers.Common.DTO;
 using Monopolizers.Common.DTO.Request;
 using Monopolizers.Common.Helpers;
 using Monopolizers.Repository.DB;
@@ -10,6 +11,7 @@ using Monopolizers.Repository.Repositories;
 using Monopolizers.Service.DTOs;
 using Monopolizers.Service.Services;
 using System.Security.Claims;
+using ResponseDTO = Monopolizers.Service.DTOs.ResponseDTO;
 
 namespace Monopolizers.Controllers
 {
@@ -153,7 +155,26 @@ namespace Monopolizers.Controllers
             var result = await _accountService.ResetPasswordAsync(dto);
             return Ok(result);
         }
+        [AllowAnonymous]
+        [HttpPost("refresh-token")]
+        public async Task<IActionResult> RefreshToken([FromBody] RefreshTokenRequestDTO dto)
+        {
+            var result = await _accountService.RefreshTokenAsync(dto);
+            if (!result.Success) // 🔁 đổi từ IsSuccess -> Success
+            {
+                return Unauthorized(new
+                {
+                    success = false,
+                    message = result.Message
+                });
+            }
 
+            return Ok(new
+            {
+                success = true,
+                token = result.Message
+            });
+        }
 
     }
 

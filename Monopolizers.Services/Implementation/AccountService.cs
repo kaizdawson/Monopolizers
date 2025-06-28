@@ -115,6 +115,15 @@ namespace Monopolizers.Service.Services
 
             return new SimpleResponseDTO(false, "Token không hợp lệ hoặc đã hết hạn");
         }
+
+        public async Task<SimpleResponseDTO> RefreshTokenAsync(RefreshTokenRequestDTO dto)
+        {
+            var newToken = await _accountRepository.RefreshTokenAsync(dto.Token);
+            if (string.IsNullOrEmpty(newToken))
+                return new SimpleResponseDTO(false, "Không thể refresh token");
+
+            return new SimpleResponseDTO(true, newToken);
+        }
     }
 
 
