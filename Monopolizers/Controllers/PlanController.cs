@@ -1,9 +1,12 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Monopolizers.Common.DTO;
 using Monopolizers.Common.Helpers;
+using Monopolizers.Repository.DB;
 using Monopolizers.Service.Contract;
 using Monopolizers.Service.DTOs;
+using Monopolizers.Service.Implementation;
 using System.Security.Claims;
 
 namespace Monopolizers.API.Controllers
@@ -13,10 +16,13 @@ namespace Monopolizers.API.Controllers
     public class PlanController : ControllerBase
     {
         private readonly IPlanService _planService;
-
-        public PlanController(IPlanService planService)
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly JwtService _jwtService;
+        public PlanController(IPlanService planService, UserManager<ApplicationUser> userManager, JwtService jwtService)
         {
             _planService = planService;
+            _userManager = userManager;
+            _jwtService = jwtService;
         }
 
         [HttpGet("all")]
@@ -63,8 +69,21 @@ namespace Monopolizers.API.Controllers
             if (string.IsNullOrEmpty(userId)) return Unauthorized();
 
             var success = await _planService.BuyPlanAsync(userId, dto.PlanId);
-            return success ? Ok("Mua gói thành công") : BadRequest("Không đủ số dư hoặc đang còn thời hạn ở gói khác!");
+            if (!success)
+                return BadRequest("Không đủ số dư hoặc đang còn thời hạn ở gói khác!");
+
+            var user = await _userManager.FindByIdAsync(userId);
+            var roles = await _userManager.GetRolesAsync(user);
+
+            var accessToken = _jwtService.GenerateAccessToken(user, roles);
+
+            return Ok(new
+            {
+                message = "Mua gói thành công",
+                accessToken
+            });
         }
+
 
         [HttpGet("current")]
         [Authorize(Roles = AppRole.Customer)]

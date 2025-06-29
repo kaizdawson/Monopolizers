@@ -338,3 +338,14 @@ D:\EXE202\New folder\Monopolizers\bin\Debug\net8.0\MailKit.dll
 D:\EXE202\New folder\Monopolizers\bin\Debug\net8.0\MimeKit.dll
 D:\EXE202\New folder\Monopolizers\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\EXE202\New folder\Monopolizers\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\publish\web.config
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\publish\appsettings.Development.json
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\publish\appsettings.json
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\publish\Monopolizers.API.deps.json
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\publish\Monopolizers.API.runtimeconfig.json
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\publish\Monopolizers.API.staticwebassets.endpoints.json
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\MailKit.dll
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\MimeKit.dll
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Khoa\source\repos\Monopolizers\Monopolizers\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
