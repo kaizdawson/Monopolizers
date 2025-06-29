@@ -35,7 +35,16 @@ namespace Monopolizers.Service.Services
 
         public async Task<IdentityResult> SignUpWithRoleAsync(SignUpModel model, string roleName)
         {
-           
+            var existingUser = await _userManager.FindByEmailAsync(model.Email);
+            if (existingUser != null)
+            {
+                return IdentityResult.Failed(new IdentityError
+                {
+                    Code = "DuplicateEmail",
+                    Description = "Email này đã được sử dụng cho một tài khoản khác."
+                });
+            }
+
             var user = new ApplicationUser
             {
                 UserName = model.UserName,

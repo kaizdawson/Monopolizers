@@ -58,6 +58,7 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
     options.Password.RequireNonAlphanumeric = false;
     options.Password.RequireUppercase = false;
     options.Password.RequireLowercase = false;
+    options.User.RequireUniqueEmail = true;
 
 }).AddEntityFrameworkStores<CardARContext>()
 .AddDefaultTokenProviders();
