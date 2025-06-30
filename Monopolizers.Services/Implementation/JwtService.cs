@@ -28,8 +28,10 @@ namespace Monopolizers.Service.Implementation
             var claims = new List<Claim>
         {
             new Claim(ClaimTypes.NameIdentifier, user.Id),
+            new Claim("id", user.Id),
             new Claim(ClaimTypes.Name, user.UserName),
             new Claim("accessLevel", accessLevel),
+            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
         };
 
             foreach (var role in roles)

@@ -10,21 +10,24 @@
       "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:controllers\\plancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.repositories\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.services\\implementation\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.services\\implementation\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.repositories\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.repositories\\repositories\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.services\\implementation\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|c:\\users\\khoa\\source\\repos\\monopolizers\\monopolizers.services\\contract\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -84,7 +87,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -96,33 +99,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IAccountService.cs",
+              "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Implementation\\IAccountService.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Implementation\\IAccountService.cs",
+              "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Implementation\\IAccountService.cs",
+              "RelativeToolTip": "..\\Monopolizers.Services\\Implementation\\IAccountService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T08:01:03.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "JwtService.cs",
               "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Implementation\\JwtService.cs",
               "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Implementation\\JwtService.cs",
               "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Implementation\\JwtService.cs",
               "RelativeToolTip": "..\\Monopolizers.Services\\Implementation\\JwtService.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAkwB8AAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwB4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-29T12:14:11.571Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "AccountRepository.cs",
               "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Repositories\\AccountRepository.cs",
               "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\Repositories\\AccountRepository.cs",
               "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Repositories\\AccountRepository.cs",
               "RelativeToolTip": "..\\Monopolizers.Repositories\\Repositories\\AccountRepository.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAIwGMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-29T11:59:18.862Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "IAccountRepository.cs",
               "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Repositories\\Repositories\\IAccountRepository.cs",
               "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\Repositories\\IAccountRepository.cs",
@@ -130,12 +146,11 @@
               "RelativeToolTip": "..\\Monopolizers.Repositories\\Repositories\\IAccountRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T11:59:17.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-29T11:59:17.978Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "IAdminService.cs",
               "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Contract\\IAdminService.cs",
               "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Contract\\IAdminService.cs",
@@ -143,25 +158,24 @@
               "RelativeToolTip": "..\\Monopolizers.Services\\Contract\\IAdminService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T11:58:31.02Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-29T11:58:31.02Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "AccountService.cs",
               "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Implementation\\AccountService.cs",
               "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Implementation\\AccountService.cs",
               "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Implementation\\AccountService.cs",
               "RelativeToolTip": "..\\Monopolizers.Services\\Implementation\\AccountService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-29T11:58:18.573Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "PlanService.cs",
               "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Services\\Implementation\\PlanService.cs",
               "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Implementation\\PlanService.cs",
@@ -169,8 +183,7 @@
               "RelativeToolTip": "..\\Monopolizers.Services\\Implementation\\PlanService.cs",
               "ViewState": "AgIAAF0AAAAAAAAAAAAmwF4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T11:54:07.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-29T11:54:07.182Z"
             },
             {
               "$type": "Document",
@@ -180,14 +193,14 @@
               "RelativeDocumentMoniker": "Controllers\\PlanController.cs",
               "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\Controllers\\PlanController.cs",
               "RelativeToolTip": "Controllers\\PlanController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAD8AAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAqwE0AAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-29T11:53:41.24Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "CardARContext.cs",
               "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\DB\\CardARContext.cs",
               "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\DB\\CardARContext.cs",
@@ -197,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "SignUpModel.cs",
               "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\Models\\SignUpModel.cs",
               "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\Models\\SignUpModel.cs",
@@ -207,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\DB\\ApplicationUser.cs",
               "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\DB\\ApplicationUser.cs",
@@ -217,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
@@ -229,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "IAccountRepository.cs",
               "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\Repositories\\IAccountRepository.cs",
               "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\Repositories\\IAccountRepository.cs",
@@ -239,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "IAccountService.cs",
               "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\IAccountService.cs",
               "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\IAccountService.cs",
@@ -249,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "RefreshTokenRequestDTO.cs",
               "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Common\\DTO\\RefreshTokenRequestDTO.cs",
               "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Common\\DTO\\RefreshTokenRequestDTO.cs",
@@ -259,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "WalletController.cs",
               "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\UserControllers\\WalletController.cs",
               "RelativeDocumentMoniker": "UserControllers\\WalletController.cs",
@@ -271,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "AccountRepository.cs",
               "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\Repositories\\AccountRepository.cs",
               "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\Repositories\\AccountRepository.cs",
@@ -281,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "SignInModel.cs",
               "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\Models\\SignInModel.cs",
               "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Repositories\\Models\\SignInModel.cs",
@@ -291,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "AccountService.cs",
               "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\AccountService.cs",
               "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\AccountService.cs",
@@ -300,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "EmailService.cs",
               "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\EmailService.cs",
               "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Services\\Implementation\\EmailService.cs",
@@ -310,33 +323,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAswDQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAswK4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-25T08:08:46.31Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-06-25T08:08:17.501Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "EmailSettings.cs",
               "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Common\\Helpers\\EmailSettings.cs",
               "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Common\\Helpers\\EmailSettings.cs",
@@ -346,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "IEmailSettings.cs",
               "DocumentMoniker": "D:\\EXE202\\New folder\\Monopolizers.Common\\Helpers\\IEmailSettings.cs",
               "ToolTip": "D:\\EXE202\\New folder\\Monopolizers.Common\\Helpers\\IEmailSettings.cs",
