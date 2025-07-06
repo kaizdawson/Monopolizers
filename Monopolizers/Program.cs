@@ -52,6 +52,8 @@ builder.Services.AddScoped<IPlanPurchaseRepository, PlanPurchaseRepository>();
 builder.Services.AddScoped<JwtService>();
 
 
+builder.Services.AddHttpClient();
+
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 {
     options.Password.RequireDigit = false;
@@ -113,6 +115,13 @@ builder.Services.AddSingleton(cloudinary);
 var jwtSecret = builder.Configuration["JWT:Secret"];
 if (string.IsNullOrEmpty(jwtSecret))
     throw new Exception("❌ JWT:Secret is not configured in appsettings or Azure App Settings!");
+
+
+builder.Services.AddHttpClient<PayOSService>();
+builder.Services.Configure<PayOSConfig>(
+    builder.Configuration.GetSection("PayOS"));
+
+
 
 builder.Services.AddAuthentication(options =>
 {

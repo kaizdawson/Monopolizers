@@ -35,5 +35,19 @@ namespace Monopolizers.Service.Implementation
             return await _walletRepository.DepositAsync(userId, amount);
         }
 
+        public async Task AddBalanceFromPayOSAsync(string userId, decimal amount)
+        {
+            var walletId = await _walletRepository.GetWalletIdByUserIdAsync(userId);
+            if (walletId == null) throw new Exception("Wallet not found for user");
+
+            var wallet = await _walletRepository.GetByIdAsync(walletId.Value);
+            if (wallet == null) throw new Exception("Wallet not found");
+
+            wallet.Balance += amount;
+            await _walletRepository.UpdateAsync(wallet);
+        }
+
+
+
     }
 }

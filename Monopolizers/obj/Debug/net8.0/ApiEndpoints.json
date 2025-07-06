@@ -550,6 +550,22 @@
   },
   {
     "ContainingType": "Monopolizers.API.UserControllers.WalletController",
+    "Method": "CreatePayOSPayment",
+    "RelativePath": "api/customer/wallet/CreatePayOSPayment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Monopolizers.Common.DTO.CreateVNPayRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.API.UserControllers.WalletController",
     "Method": "CreateVNPayPayment",
     "RelativePath": "api/customer/wallet/CreateVNPayPayment",
     "HttpMethod": "POST",
@@ -940,6 +956,22 @@
         "Name": "file",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Monopolizers.API.Controllers.PayOSWebhookController",
+    "Method": "HandleWebhook",
+    "RelativePath": "api/webhook/payos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Monopolizers.Common.DTO.PayOSWebhookDTO",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

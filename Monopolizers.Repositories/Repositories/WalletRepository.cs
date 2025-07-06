@@ -72,6 +72,28 @@ namespace Monopolizers.Repository.Repositories
             return "Success";
 
         }
+        public async Task<int?> GetWalletIdByUserIdAsync(string userId)
+        {
+            var user = await _context.Users
+                .Where(u => u.Id == userId)
+                .Select(u => new { u.WalletId })
+                .FirstOrDefaultAsync();
+
+            return user?.WalletId;
+        }
+
+
+        public async Task<Wallet> GetByIdAsync(int walletId)
+        {
+            return await _context.Wallets
+                .FirstOrDefaultAsync(w => w.WalletId == walletId);
+        }
+
+        public async Task UpdateAsync(Wallet wallet)
+        {
+            _context.Wallets.Update(wallet);
+            await _context.SaveChangesAsync();
+        }
 
     }
 }

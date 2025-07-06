@@ -1,4 +1,5 @@
 ﻿using Monopolizers.Common.DTO;
+using Monopolizers.Repository.DB;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,9 @@ namespace Monopolizers.Repository.Repositories
         Task UpdateWalletBalanceAsync(WalletDTO walletDTO);
 
         Task<string> DepositAsync(string userId, decimal amount);
+        Task<Wallet> GetByIdAsync(int walletId);
+        Task UpdateAsync(Wallet wallet);
+        Task<int?> GetWalletIdByUserIdAsync(string userId);
 
     }
 }

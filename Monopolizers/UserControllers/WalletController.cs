@@ -21,11 +21,15 @@ namespace Monopolizers.API.UserControllers
     {
         private readonly IWalletService _walletService;
         private readonly IVnPayService _vnPayService;
-        public WalletController(IWalletService walletService, IVnPayService vnPayService)
+        private readonly PayOSService _payOSService;
+
+        public WalletController(IWalletService walletService, IVnPayService vnPayService, PayOSService payOSService)
         {
             _walletService = walletService;
             _vnPayService = vnPayService;
+            _payOSService = payOSService;
         }
+
 
         [HttpGet]
         public async Task<ActionResult<WalletDTO>> GetWalletBalance()
@@ -117,6 +121,35 @@ namespace Monopolizers.API.UserControllers
             catch (Exception ex)
             {
                 return StatusCode(500, new { Message = "Lỗi xử lý VNPay Return", Error = ex.Message });
+            }
+        }
+
+        [Authorize]
+        [HttpPost("CreatePayOSPayment")]
+        public async Task<IActionResult> CreatePayOSPayment([FromBody] CreateVNPayRequestDTO request)
+        {
+            var username = User.FindFirst(ClaimTypes.Name)?.Value;
+            if (string.IsNullOrEmpty(username))
+            {
+                return Unauthorized(new { Message = "Token không hợp lệ." });
+            }
+
+            if (request.Amount <= 0)
+            {
+                return BadRequest(new { Message = "Số tiền không hợp lệ." });
+            }
+
+            var orderId = Guid.NewGuid().ToString();
+            var description = $"Nạp ví: {username}";
+
+            try
+            {
+                var paymentUrl = await _payOSService.CreatePaymentAsync(request.Amount, orderId, description);
+                return Ok(new { PaymentUrl = paymentUrl });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = "Lỗi khi gọi PayOS", Error = ex.Message });
             }
         }
 

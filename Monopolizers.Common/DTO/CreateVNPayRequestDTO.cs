@@ -8,6 +8,6 @@ namespace Monopolizers.Common.DTO
 {
     public class CreateVNPayRequestDTO
     {
-        public double Amount { get; set; }
+        public decimal Amount { get; set; }
 }
 }

@@ -12,6 +12,7 @@ namespace Monopolizers.Service.Contract
         Task<WalletDTO> GetWalletBalanceAsync(string userId);
         Task UpdateWalletBalanceAsync(WalletDTO walletDTO);
         Task<string> DepositAsync(string userId, decimal amount);
+        Task AddBalanceFromPayOSAsync(string userId, decimal amount);
 
 
     }
