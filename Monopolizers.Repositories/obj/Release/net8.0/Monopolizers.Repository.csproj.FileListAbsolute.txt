@@ -16,3 +16,21 @@ D:\EXE202\New folder\Monopolizers.Repositories\obj\Release\net8.0\refint\Monopol
 D:\EXE202\New folder\Monopolizers.Repositories\obj\Release\net8.0\Monopolizers.Repository.pdb
 D:\EXE202\New folder\Monopolizers.Repositories\obj\Release\net8.0\Monopolizers.Repository.genruntimeconfig.cache
 D:\EXE202\New folder\Monopolizers.Repositories\obj\Release\net8.0\ref\Monopolizers.Repository.dll
+C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers.Repositories\bin\Release\net8.0\Monopolizers.Repository.deps.json
+C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers.Repositories\bin\Release\net8.0\Monopolizers.Repository.runtimeconfig.json
+C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers.Repositories\bin\Release\net8.0\Monopolizers.Repository.dll
+C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers.Repositories\bin\Release\net8.0\Monopolizers.Repository.pdb
+C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers.Repositories\bin\Release\net8.0\Monopolizers.Common.dll
+C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers.Repositories\bin\Release\net8.0\Monopolizers.Common.pdb
+C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers.Repositories\obj\Release\net8.0\Monopolizers.Repository.csproj.AssemblyReference.cache
+C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers.Repositories\obj\Release\net8.0\Monopolizers.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers.Repositories\obj\Release\net8.0\Monopolizers.Repository.AssemblyInfoInputs.cache
+C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers.Repositories\obj\Release\net8.0\Monopolizers.Repository.AssemblyInfo.cs
+C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers.Repositories\obj\Release\net8.0\Monopolizers.Repository.csproj.CoreCompileInputs.cache
+C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers.Repositories\obj\Release\net8.0\Monopolizers.Repository.sourcelink.json
+C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers.Repositories\obj\Release\net8.0\Monopoli.018B3D5C.Up2Date
+C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers.Repositories\obj\Release\net8.0\Monopolizers.Repository.dll
+C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers.Repositories\obj\Release\net8.0\refint\Monopolizers.Repository.dll
+C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers.Repositories\obj\Release\net8.0\Monopolizers.Repository.pdb
+C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers.Repositories\obj\Release\net8.0\Monopolizers.Repository.genruntimeconfig.cache
+C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers.Repositories\obj\Release\net8.0\ref\Monopolizers.Repository.dll

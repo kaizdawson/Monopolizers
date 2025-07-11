@@ -517,7 +517,6 @@ C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers\obj\Debug\net8.0\staticwebass
 C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Monopolizers.API.props
 C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Monopolizers.API.props
 C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers\obj\Debug\net8.0\Monopoli.B41F83E2.Up2Date
 C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers\obj\Debug\net8.0\Monopolizers.API.dll
 C:\Users\MSI\Desktop\EXE\Monopolizers\Monopolizers\obj\Debug\net8.0\refint\Monopolizers.API.dll
