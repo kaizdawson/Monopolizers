@@ -81,12 +81,39 @@ public class PayOSService
         return GenerateHmac(raw, _config.ChecksumKey);
     }
 
-    public string GenerateWebhookSignature(string jsonWithoutSignature)
+    public string GenerateWebhookSignature(Dictionary<string, object> data)
     {
-        using var hmac = new HMACSHA256(Encoding.UTF8.GetBytes(_config.ChecksumKey));
-        var hash = hmac.ComputeHash(Encoding.UTF8.GetBytes(jsonWithoutSignature));
-        return BitConverter.ToString(hash).Replace("-", "").ToLowerInvariant();
+        // Flatten & normalize object
+        var flatData = new Dictionary<string, string>();
+
+        foreach (var kvp in data)
+        {
+            if (kvp.Value == null || kvp.Value.ToString() == "null" || kvp.Value.ToString() == "undefined")
+            {
+                flatData[kvp.Key] = "";
+            }
+            else
+            {
+                flatData[kvp.Key] = kvp.Value.ToString();
+            }
+        }
+
+        // Sắp xếp key alphabet
+        var sorted = flatData.OrderBy(k => k.Key, StringComparer.Ordinal);
+        var rawData = string.Join("&", sorted.Select(kvp => $"{kvp.Key}={kvp.Value}"));
+
+        // Hash với HMAC SHA256
+        var keyBytes = Encoding.UTF8.GetBytes(_config.ChecksumKey);
+        var rawBytes = Encoding.UTF8.GetBytes(rawData);
+
+        using var hmac = new HMACSHA256(keyBytes);
+        var hashBytes = hmac.ComputeHash(rawBytes);
+
+        return BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
     }
+
+
+
 
 
     private string GenerateHmac(string input, string key)

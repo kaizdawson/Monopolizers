@@ -7,9 +7,12 @@ using Newtonsoft.Json.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Monopolizers.Common.DTO;
+using System.Security.Cryptography;
+using Microsoft.AspNetCore.Cors;
 
 namespace Monopolizers.API.Controllers
 {
+    [EnableCors("AllowWebhook")]
     [Route("api/webhook/payos")]
     [ApiController]
     public class PayOSWebhookController : ControllerBase
@@ -31,24 +34,38 @@ namespace Monopolizers.API.Controllers
             _payosService = payosService;
         }
 
-        [HttpPost("webhook/payos")]
+        [HttpPost]
         public async Task<IActionResult> HandleWebhook()
         {
-            // 1. Đọc raw JSON từ body
+            _logger.LogInformation("📩 Webhook received at: " + DateTime.UtcNow);
             string rawBody;
             using (var reader = new StreamReader(Request.Body))
             {
                 rawBody = await reader.ReadToEndAsync();
             }
 
-            // 2. Parse JSON → Remove "signature"
-            var jsonObject = JObject.Parse(rawBody);
-            var receivedSignature = jsonObject["signature"]?.ToString();
-            jsonObject.Remove("signature"); // Xoá "signature" trước khi ký lại
-            var jsonWithoutSignature = jsonObject.ToString(Formatting.None);
+            // Parse JSON để lấy "signature" từ bản gốc
+            var jObject = JObject.Parse(rawBody);
+            var receivedSignature = jObject["signature"]?.ToString();
 
-            // 3. So sánh chữ ký
-            var expectedSignature = _payosService.GenerateWebhookSignature(jsonWithoutSignature);
+            if (string.IsNullOrEmpty(receivedSignature))
+            {
+                _logger.LogWarning("❌ Không tìm thấy signature trong payload");
+                return BadRequest("Missing signature");
+            }
+
+            // Tạo bản sao rawBody KHÔNG có "signature" để xác thực
+            var dataJObject = jObject["data"] as JObject;
+            if (dataJObject == null)
+            {
+                _logger.LogWarning("❌ Không tìm thấy object `data` trong payload");
+                return BadRequest("Missing data");
+            }
+
+            var unsignedData = dataJObject.ToObject<Dictionary<string, object>>();
+            var expectedSignature = _payosService.GenerateWebhookSignature(unsignedData);
+
+
             if (!string.Equals(receivedSignature, expectedSignature, StringComparison.OrdinalIgnoreCase))
             {
                 _logger.LogWarning("❌ Signature không hợp lệ");
@@ -58,33 +75,52 @@ namespace Monopolizers.API.Controllers
                 return BadRequest("Invalid signature");
             }
 
-            // 4. Sau khi xác thực OK, parse JSON để xử lý dữ liệu
-            var parsedObject = JsonConvert.DeserializeObject<PayOSWebhookInput>(rawBody);
-            var dto = parsedObject?.Data;
 
-            if (dto == null || !string.Equals(dto.Status, "PAID", StringComparison.OrdinalIgnoreCase))
+            var parsed = JsonConvert.DeserializeObject<PayOSWebhookInput>(rawBody);
+            var dto = parsed?.Data;
+
+            if (dto == null || !parsed.Success)
             {
-                _logger.LogInformation("⚠️ Trạng thái không phải PAID => Bỏ qua");
+                _logger.LogInformation($"⚠️ Giao dịch không thành công hoặc thiếu dữ liệu. Status = {dto?.Status}");
                 return Ok("Ignored");
             }
 
+
             try
             {
-                var username = dto.Description?.Replace("Nap vi", "", StringComparison.OrdinalIgnoreCase).Trim();
+                _logger.LogInformation("📥 Bắt đầu xử lý dữ liệu webhook");
+
+                var description = dto.Description ?? "";
+                var username = description.Split("Nap vi", StringSplitOptions.RemoveEmptyEntries)
+                                          .LastOrDefault()?.Trim();
+
+                _logger.LogInformation($"🔍 Đã parse ra username: {username}");
+
+                if (string.IsNullOrEmpty(username))
+                {
+                    _logger.LogWarning("❌ Không tìm được username trong description: " + description);
+                    return BadRequest("Username parsing failed");
+                }
+
                 var user = await _accountRepository.FindByUsernameAsync(username);
                 if (user == null)
+                {
+                    _logger.LogWarning("❌ Không tìm thấy user với username: " + username);
                     return BadRequest("User not found");
+                }
+
+                _logger.LogInformation($"🔄 Tìm thấy userId = {user.Id}, tiến hành cộng tiền");
 
                 await _walletService.AddBalanceFromPayOSAsync(user.Id, dto.Amount);
                 _logger.LogInformation($"✅ Cộng {dto.Amount} vào ví userId = {user.Id}");
                 return Ok("Nạp ví thành công");
             }
+
             catch (Exception ex)
             {
                 _logger.LogError(ex, "❌ Lỗi xử lý webhook");
                 return StatusCode(500, "Internal server error");
             }
         }
-
     }
 }

@@ -50,8 +50,6 @@ builder.Services.AddScoped<IPricingPlansRepository, PricingPlansRepository>();
 builder.Services.AddScoped<IPlanService, PlanService>();
 builder.Services.AddScoped<IPlanPurchaseRepository, PlanPurchaseRepository>();
 builder.Services.AddScoped<JwtService>();
-builder.Services.AddHttpClient<PayOSService>();
-
 
 builder.Services.AddHttpClient();
 
@@ -155,6 +153,12 @@ builder.Services.AddAuthentication(options =>
 });
 builder.Services.AddCors(options =>
 {
+    options.AddPolicy("AllowWebhook", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
     options.AddPolicy("AllowVercel", policy =>
     {
         policy.WithOrigins("https://monopolizers.vercel.app")
@@ -176,8 +180,8 @@ if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-app.UseCors("AllowVercel");
 
+app.UseCors("AllowVercel");
 
 app.UseHttpsRedirection();
 app.UseAuthentication();
