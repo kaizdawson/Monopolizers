@@ -111,7 +111,7 @@ namespace Monopolizers.API.Controllers
 
                 _logger.LogInformation($"🔄 Tìm thấy userId = {user.Id}, tiến hành cộng tiền");
 
-                await _walletService.AddBalanceFromPayOSAsync(user.Id, dto.Amount);
+                await _walletService.AddBalanceFromPayOSAsync(user.Id, dto.Amount, dto.OrderCode.ToString());
                 _logger.LogInformation($"✅ Cộng {dto.Amount} vào ví userId = {user.Id}");
                 return Ok("Nạp ví thành công");
             }

@@ -3,18 +3,45 @@
   "WorkspaceRootPath": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|c:\\users\\msi\\desktop\\exe\\monopolizers\\monopolizers.common\\dto\\payoswebhookinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|c:\\users\\msi\\desktop\\exe\\monopolizers\\monopolizers.services\\implementation\\walletservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|c:\\users\\msi\\desktop\\exe\\monopolizers\\monopolizers\\controllers\\payoswebhookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:controllers\\payoswebhookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|c:\\users\\msi\\desktop\\exe\\monopolizers\\monopolizers.services\\implementation\\payosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|c:\\users\\msi\\desktop\\exe\\monopolizers\\monopolizers.services\\contract\\iwalletservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|c:\\users\\msi\\desktop\\exe\\monopolizers\\monopolizers.repositories\\repositories\\walletrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|c:\\users\\msi\\desktop\\exe\\monopolizers\\monopolizers.repositories\\repositories\\wallettransactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|c:\\users\\msi\\desktop\\exe\\monopolizers\\monopolizers.repositories\\db\\wallettransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|c:\\users\\msi\\desktop\\exe\\monopolizers\\monopolizers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|c:\\users\\msi\\desktop\\exe\\monopolizers\\monopolizers.repositories\\db\\cardarcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|c:\\users\\msi\\desktop\\exe\\monopolizers\\monopolizers.repositories\\db\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|c:\\users\\msi\\desktop\\exe\\monopolizers\\monopolizers.repositories\\repositories\\iwallettransactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Repositories\\Migrations\\20250713160315_AddOrderCodeToWalletTransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|c:\\users\\msi\\desktop\\exe\\monopolizers\\monopolizers.common\\dto\\payoswebhookinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|c:\\users\\msi\\desktop\\exe\\monopolizers\\monopolizers.services\\implementation\\payosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|c:\\users\\msi\\desktop\\exe\\monopolizers\\monopolizers.common\\dto\\payoswebhookwrapperdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -26,9 +53,6 @@
       "AbsoluteMoniker": "D:0:0:{24DEF13E-C555-4FAE-B5F0-E782995EA9B6}|..\\Monopolizers.Common\\Monopolizers.Common.csproj|c:\\users\\msi\\desktop\\exe\\monopolizers\\monopolizers.common\\dto\\payosconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|c:\\users\\msi\\desktop\\exe\\monopolizers\\monopolizers.services\\implementation\\walletservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{37EE15E1-D55A-433D-934C-1F1FF222D93A}|..\\Monopolizers.Services\\Monopolizers.Service.csproj|c:\\users\\msi\\desktop\\exe\\monopolizers\\monopolizers.services\\implementation\\vnpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -38,9 +62,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|c:\\users\\msi\\desktop\\exe\\monopolizers\\monopolizers\\usercontrollers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F2CFD40-F2E8-42C2-9964-CD4FDCDF389B}|Monopolizers.API.csproj|solutionrelative:usercontrollers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86CB4FB0-2A4F-406D-B75E-D4977CC4CFF7}|..\\Monopolizers.Repositories\\Monopolizers.Repository.csproj|c:\\users\\msi\\desktop\\exe\\monopolizers\\monopolizers.repositories\\repositories\\walletrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +71,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 25,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,7 +115,98 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CardARContext.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Repositories\\DB\\CardARContext.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\DB\\CardARContext.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Repositories\\DB\\CardARContext.cs",
+              "RelativeToolTip": "..\\Monopolizers.Repositories\\DB\\CardARContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wBEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T16:15:08.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Repositories\\DB\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\DB\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Repositories\\DB\\ApplicationUser.cs",
+              "RelativeToolTip": "..\\Monopolizers.Repositories\\DB\\ApplicationUser.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T16:15:05.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IWalletTransactionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Repositories\\Repositories\\IWalletTransactionRepository.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\Repositories\\IWalletTransactionRepository.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Repositories\\Repositories\\IWalletTransactionRepository.cs",
+              "RelativeToolTip": "..\\Monopolizers.Repositories\\Repositories\\IWalletTransactionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T16:14:31.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WalletTransactionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Repositories\\Repositories\\WalletTransactionRepository.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\Repositories\\WalletTransactionRepository.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Repositories\\Repositories\\WalletTransactionRepository.cs",
+              "RelativeToolTip": "..\\Monopolizers.Repositories\\Repositories\\WalletTransactionRepository.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T16:14:18.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IWalletService.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Services\\Contract\\IWalletService.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Contract\\IWalletService.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Services\\Contract\\IWalletService.cs",
+              "RelativeToolTip": "..\\Monopolizers.Services\\Contract\\IWalletService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T16:07:58.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20250713160315_AddOrderCodeToWalletTransaction.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Repositories\\Migrations\\20250713160315_AddOrderCodeToWalletTransaction.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\Migrations\\20250713160315_AddOrderCodeToWalletTransaction.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Repositories\\Migrations\\20250713160315_AddOrderCodeToWalletTransaction.cs",
+              "RelativeToolTip": "..\\Monopolizers.Repositories\\Migrations\\20250713160315_AddOrderCodeToWalletTransaction.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAIwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T16:03:15.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WalletTransaction.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Repositories\\DB\\WalletTransaction.cs",
+              "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\DB\\WalletTransaction.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Repositories\\DB\\WalletTransaction.cs",
+              "RelativeToolTip": "..\\Monopolizers.Repositories\\DB\\WalletTransaction.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T16:01:37.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "VnPayService.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Services\\Implementation\\VnPayService.cs",
               "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Implementation\\VnPayService.cs",
@@ -102,12 +214,11 @@
               "RelativeToolTip": "..\\Monopolizers.Services\\Implementation\\VnPayService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T15:02:22.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T15:02:22.532Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "PayOSConfig.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Common\\DTO\\PayOSConfig.cs",
               "RelativeDocumentMoniker": "..\\Monopolizers.Common\\DTO\\PayOSConfig.cs",
@@ -115,12 +226,11 @@
               "RelativeToolTip": "..\\Monopolizers.Common\\DTO\\PayOSConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T09:12:50.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T09:12:50.464Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
               "Title": "PayOSWebhookInput.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Common\\DTO\\PayOSWebhookInput.cs",
               "RelativeDocumentMoniker": "..\\Monopolizers.Common\\DTO\\PayOSWebhookInput.cs",
@@ -133,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "PayOSWebhookWrapperDTO.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Common\\DTO\\PayOSWebhookWrapperDTO.cs",
               "RelativeDocumentMoniker": "..\\Monopolizers.Common\\DTO\\PayOSWebhookWrapperDTO.cs",
@@ -141,12 +251,11 @@
               "RelativeToolTip": "..\\Monopolizers.Common\\DTO\\PayOSWebhookWrapperDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T07:32:41.668Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T07:32:41.668Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "PayOSWebhookDTO.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Common\\DTO\\PayOSWebhookDTO.cs",
               "RelativeDocumentMoniker": "..\\Monopolizers.Common\\DTO\\PayOSWebhookDTO.cs",
@@ -154,12 +263,11 @@
               "RelativeToolTip": "..\\Monopolizers.Common\\DTO\\PayOSWebhookDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T07:03:55.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T07:03:55.323Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "PayOSService.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Services\\Implementation\\PayOSService.cs",
               "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Implementation\\PayOSService.cs",
@@ -167,12 +275,11 @@
               "RelativeToolTip": "..\\Monopolizers.Services\\Implementation\\PayOSService.cs",
               "ViewState": "AgIAAFsAAAAAAAAAAAAQwHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T06:39:27.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T06:39:27.483Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "WalletController.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers\\UserControllers\\WalletController.cs",
               "RelativeDocumentMoniker": "UserControllers\\WalletController.cs",
@@ -185,38 +292,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "WalletRepository.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Repositories\\Repositories\\WalletRepository.cs",
               "RelativeDocumentMoniker": "..\\Monopolizers.Repositories\\Repositories\\WalletRepository.cs",
               "ToolTip": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Repositories\\Repositories\\WalletRepository.cs",
               "RelativeToolTip": "..\\Monopolizers.Repositories\\Repositories\\WalletRepository.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAIwF8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAtwEcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T06:23:49.355Z"
+              "WhenOpened": "2025-07-13T06:23:49.355Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "WalletService.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Services\\Implementation\\WalletService.cs",
               "RelativeDocumentMoniker": "..\\Monopolizers.Services\\Implementation\\WalletService.cs",
               "ToolTip": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers.Services\\Implementation\\WalletService.cs",
               "RelativeToolTip": "..\\Monopolizers.Services\\Implementation\\WalletService.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAswCUAAABRAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAmwDYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-13T06:22:49.722Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAJ4AAAAAAAAAAAAAALcAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAADAAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-13T05:42:15.567Z",
               "EditorCaption": ""
@@ -229,14 +337,14 @@
               "RelativeDocumentMoniker": "Controllers\\PayOSWebhookController.cs",
               "ToolTip": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers\\Controllers\\PayOSWebhookController.cs",
               "RelativeToolTip": "Controllers\\PayOSWebhookController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAlwE4AAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAQwH4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-11T17:49:35.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\EXE\\Monopolizers\\Monopolizers\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -244,8 +352,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAA4AAAAAAAAAAADwvzAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-06T11:23:44.497Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T11:23:44.497Z"
             }
           ]
         }

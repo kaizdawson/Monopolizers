@@ -21,6 +21,11 @@ namespace Monopolizers.Repository.DB
         public decimal Amount { get; set; }
         public string Type { get; set; }
         public string Description { get; set; }
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+    
+        [MaxLength(50)]
+        public string? OrderCode { get; set; } // PayOS OrderCode
     }
+
 }

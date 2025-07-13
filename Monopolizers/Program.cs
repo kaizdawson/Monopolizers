@@ -49,6 +49,7 @@ builder.Services.AddScoped<IVnPayService, VnPayService>();
 builder.Services.AddScoped<IPricingPlansRepository, PricingPlansRepository>();
 builder.Services.AddScoped<IPlanService, PlanService>();
 builder.Services.AddScoped<IPlanPurchaseRepository, PlanPurchaseRepository>();
+builder.Services.AddScoped<IWalletTransactionRepository, WalletTransactionRepository>();
 builder.Services.AddScoped<JwtService>();
 
 builder.Services.AddHttpClient();
