@@ -8,12 +8,11 @@ namespace Monopolizers.Common.DTO
 {
     public class PayOSWebhookDTO
     {
-        public long orderCode { get; set; }
-        public int amount { get; set; } 
-        public string description { get; set; }
-        public string status { get; set; } 
-        public string transactionId { get; set; }
-        public long time { get; set; } 
+        public int OrderCode { get; set; }
+        public int Amount { get; set; }
+        public string Description { get; set; }
+        public string Status { get; set; }
+        public long TransactionId { get; set; }
+        public long Time { get; set; }
     }
-
 }

@@ -7667,7 +7667,8 @@
     "net8.0": [
       "CloudinaryDotNet >= 1.27.5",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.16",
-      "Monopolizers.Service >= 1.0.0"
+      "Monopolizers.Service >= 1.0.0",
+      "Newtonsoft.Json >= 13.0.3"
     ]
   },
   "packageFolders": {
@@ -7733,6 +7734,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[8.0.16, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
           }
         },
         "imports": [

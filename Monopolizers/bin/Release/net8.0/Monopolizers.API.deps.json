@@ -10,7 +10,8 @@
         "dependencies": {
           "CloudinaryDotNet": "1.27.5",
           "Microsoft.EntityFrameworkCore.Design": "8.0.16",
-          "Monopolizers.Service": "1.0.0"
+          "Monopolizers.Service": "1.0.0",
+          "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
           "Monopolizers.API.dll": {}

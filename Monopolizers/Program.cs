@@ -50,6 +50,7 @@ builder.Services.AddScoped<IPricingPlansRepository, PricingPlansRepository>();
 builder.Services.AddScoped<IPlanService, PlanService>();
 builder.Services.AddScoped<IPlanPurchaseRepository, PlanPurchaseRepository>();
 builder.Services.AddScoped<JwtService>();
+builder.Services.AddHttpClient<PayOSService>();
 
 
 builder.Services.AddHttpClient();
@@ -100,8 +101,10 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
+        options.JsonSerializerOptions.PropertyNameCaseInsensitive = true; 
         options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
     });
+
 
 builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("CloudinarySettings"));
 

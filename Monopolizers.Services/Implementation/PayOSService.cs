@@ -74,4 +74,26 @@ public class PayOSService
         var hash = hmac.ComputeHash(Encoding.UTF8.GetBytes(rawData));
         return BitConverter.ToString(hash).Replace("-", "").ToLower();
     }
+
+    public string GeneratePaymentSignature(int amount, string cancelUrl, string description, int orderCode, string returnUrl)
+    {
+        var raw = $"amount={amount}&cancelUrl={cancelUrl}&description={description}&orderCode={orderCode}&returnUrl={returnUrl}";
+        return GenerateHmac(raw, _config.ChecksumKey);
+    }
+
+    public string GenerateWebhookSignature(string jsonWithoutSignature)
+    {
+        using var hmac = new HMACSHA256(Encoding.UTF8.GetBytes(_config.ChecksumKey));
+        var hash = hmac.ComputeHash(Encoding.UTF8.GetBytes(jsonWithoutSignature));
+        return BitConverter.ToString(hash).Replace("-", "").ToLowerInvariant();
+    }
+
+
+    private string GenerateHmac(string input, string key)
+    {
+        using var hmac = new HMACSHA256(Encoding.UTF8.GetBytes(key));
+        var hash = hmac.ComputeHash(Encoding.UTF8.GetBytes(input));
+        return BitConverter.ToString(hash).Replace("-", "").ToLowerInvariant();
+    }
+
 }
