@@ -152,13 +152,15 @@ builder.Services.AddAuthentication(options =>
 });
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll", policy =>
+    options.AddPolicy("AllowVercel", policy =>
     {
-        policy.AllowAnyOrigin()  // Cho phép tất cả các origin
-              .AllowAnyMethod()  // Cho phép tất cả các phương thức HTTP (GET, POST, PUT, DELETE, v.v.)
-              .AllowAnyHeader(); // Cho phép tất cả các header
+        policy.WithOrigins("https://monopolizers.vercel.app")
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials(); 
     });
 });
+
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
 builder.Services.AddSingleton<IEmailSettings>(sp =>
     sp.GetRequiredService<IOptions<EmailSettings>>().Value);
@@ -171,7 +173,8 @@ if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-app.UseCors("AllowAll");
+app.UseCors("AllowVercel");
+
 
 app.UseHttpsRedirection();
 app.UseAuthentication();
