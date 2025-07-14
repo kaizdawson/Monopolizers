@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Monopolizers.Repository")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5f2b8cf4a5ff9c59910cde41a73bd1a3f599c78")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36e0391ef4780e8b31bf926eab248a9eec06218f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Monopolizers.Repository")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Monopolizers.Repository")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
