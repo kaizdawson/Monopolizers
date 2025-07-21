@@ -37,3 +37,16 @@ C:\Users\Khoa\source\repos\Monopolizers\Monopolizers.Common\obj\Release\net8.0\M
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers.Common\obj\Release\net8.0\refint\Monopolizers.Common.dll
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers.Common\obj\Release\net8.0\Monopolizers.Common.pdb
 C:\Users\Khoa\source\repos\Monopolizers\Monopolizers.Common\obj\Release\net8.0\ref\Monopolizers.Common.dll
+C:\Users\Khoa\Desktop\Mono\Monopolizers\Monopolizers.Common\bin\Release\net8.0\Monopolizers.Common.deps.json
+C:\Users\Khoa\Desktop\Mono\Monopolizers\Monopolizers.Common\bin\Release\net8.0\Monopolizers.Common.dll
+C:\Users\Khoa\Desktop\Mono\Monopolizers\Monopolizers.Common\bin\Release\net8.0\Monopolizers.Common.pdb
+C:\Users\Khoa\Desktop\Mono\Monopolizers\Monopolizers.Common\obj\Release\net8.0\Monopolizers.Common.csproj.AssemblyReference.cache
+C:\Users\Khoa\Desktop\Mono\Monopolizers\Monopolizers.Common\obj\Release\net8.0\Monopolizers.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Khoa\Desktop\Mono\Monopolizers\Monopolizers.Common\obj\Release\net8.0\Monopolizers.Common.AssemblyInfoInputs.cache
+C:\Users\Khoa\Desktop\Mono\Monopolizers\Monopolizers.Common\obj\Release\net8.0\Monopolizers.Common.AssemblyInfo.cs
+C:\Users\Khoa\Desktop\Mono\Monopolizers\Monopolizers.Common\obj\Release\net8.0\Monopolizers.Common.csproj.CoreCompileInputs.cache
+C:\Users\Khoa\Desktop\Mono\Monopolizers\Monopolizers.Common\obj\Release\net8.0\Monopolizers.Common.sourcelink.json
+C:\Users\Khoa\Desktop\Mono\Monopolizers\Monopolizers.Common\obj\Release\net8.0\Monopolizers.Common.dll
+C:\Users\Khoa\Desktop\Mono\Monopolizers\Monopolizers.Common\obj\Release\net8.0\refint\Monopolizers.Common.dll
+C:\Users\Khoa\Desktop\Mono\Monopolizers\Monopolizers.Common\obj\Release\net8.0\Monopolizers.Common.pdb
+C:\Users\Khoa\Desktop\Mono\Monopolizers\Monopolizers.Common\obj\Release\net8.0\ref\Monopolizers.Common.dll

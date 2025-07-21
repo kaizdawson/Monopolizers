@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ULHVcVDB8JM=",
+  "dgSpecHash": "z2nUi+jzhpg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Khoa\\source\\repos\\Monopolizers\\Monopolizers.Common\\Monopolizers.Common.csproj",
+  "projectFilePath": "C:\\Users\\Khoa\\Desktop\\Mono\\Monopolizers\\Monopolizers.Common\\Monopolizers.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Khoa\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.1.0\\microsoft.aspnetcore.http.abstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\Khoa\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.1.0\\microsoft.aspnetcore.http.features.2.1.0.nupkg.sha512",

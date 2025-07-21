@@ -67,6 +67,12 @@ namespace Monopolizers.Repository.DB
                 .HasForeignKey(a => a.UserId)
                 .OnDelete(DeleteBehavior.NoAction);
 
+            modelBuilder.Entity<UserSavedCard>()
+    .HasOne(usc => usc.User)
+    .WithMany(u => u.SavedCards)
+    .HasForeignKey(usc => usc.UserId)
+    .OnDelete(DeleteBehavior.NoAction); // hoặc NoAction nếu bạn không muốn xóa theo
+
         }
     }
 }

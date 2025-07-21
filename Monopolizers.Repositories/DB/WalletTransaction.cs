@@ -25,7 +25,7 @@ namespace Monopolizers.Repository.DB
 
     
         [MaxLength(50)]
-        public string? OrderCode { get; set; } // PayOS OrderCode
+        public string? OrderCode { get; set; } 
     }
 
 }

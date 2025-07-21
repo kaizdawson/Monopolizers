@@ -19,5 +19,8 @@ namespace Monopolizers.Repository.DB
         public ICollection<Asset>? Assets { get; set; }
         public ICollection<Design>? Designs { get; set; }
         public ICollection<PlanPurchase>? PlanPurchases { get; set; }
+
+        public ICollection<UserSavedCard> SavedCards { get; set; } = new List<UserSavedCard>();
+
     }
 }

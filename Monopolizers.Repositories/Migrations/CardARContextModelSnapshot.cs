@@ -715,9 +715,9 @@ namespace Monopolizers.Repository.Migrations
             modelBuilder.Entity("Monopolizers.Repository.DB.UserSavedCard", b =>
                 {
                     b.HasOne("Monopolizers.Repository.DB.ApplicationUser", "User")
-                        .WithMany()
+                        .WithMany("SavedCards")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("User");
@@ -741,6 +741,8 @@ namespace Monopolizers.Repository.Migrations
                     b.Navigation("Designs");
 
                     b.Navigation("PlanPurchases");
+
+                    b.Navigation("SavedCards");
                 });
 
             modelBuilder.Entity("Monopolizers.Repository.DB.Card", b =>
