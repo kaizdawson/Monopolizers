@@ -12,7 +12,7 @@ namespace Monopolizers.Service.Contract
         Task<ResponseDTO> GetAllUsersAsync();
         Task<ResponseDTO> GetUserByIdAsync(string userId);
         Task<ResponseDTO> UnbanUserAsync(string userId);
-        Task<ResponseDTO> GetDashboardOverviewAsync();
+      Task<ResponseDTO> GetDashboardOverviewAsync();
         ResponseDTO GetAllRoles();
     }
 }

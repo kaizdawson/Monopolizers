@@ -16,6 +16,8 @@ namespace Monopolizers.Repository.DB
 
         public string Ban { get; set; } = "InActive";
 
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
         public ICollection<Asset>? Assets { get; set; }
         public ICollection<Design>? Designs { get; set; }
         public ICollection<PlanPurchase>? PlanPurchases { get; set; }

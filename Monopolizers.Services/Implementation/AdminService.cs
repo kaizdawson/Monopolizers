@@ -83,29 +83,117 @@ namespace Monopolizers.Service.Implementation
             var res = new ResponseDTO();
             try
             {
-                var totalUsersByRole = new Dictionary<string, int>
-                {
-                    { "Admin", (await _userManager.GetUsersInRoleAsync("Admin")).Count },
-                    { "Manager", (await _userManager.GetUsersInRoleAsync("Manager")).Count },
-                    { "Staff", (await _userManager.GetUsersInRoleAsync("Staff")).Count },
-                    { "Customer", (await _userManager.GetUsersInRoleAsync("Customer")).Count }
-                };
-
-                var totalCards = await _cardRepository.GetQueryable().CountAsync();
-                var totalAssets = await _assetRepository.GetQueryable().CountAsync();
-                var totalSavedCards = await _savedCardRepository.GetQueryable().CountAsync();
-                var totalRevenue = await _walletTransactionRepository
+                var users = _userManager.Users.AsQueryable();
+                var planPurchases = _unitOfWork.PlanPurchaseRepository
                     .GetQueryable()
-                    .Where(t => t.Type == TransactionTypes.Deposit || t.Type == TransactionTypes.TopUp || t.Type == TransactionTypes.BuyPlan)
-                    .SumAsync(t => t.Amount);
+                    .Include(p => p.Plan);
+                var walletTransactions = _unitOfWork.WalletTransactionRepository
+                    .GetQueryable()
+                    .Include(t => t.Wallet)
+                    .ThenInclude(w => w.User);
+
+                async Task<List<DashboardStatsDTO>> BuildStats(string period)
+                {
+                    Func<DateTime?, DateTime> keySelector = period switch
+                    {
+                        "daily" => d => d?.Date ?? DateTime.MinValue,
+                        "monthly" => d => d.HasValue ? new DateTime(d.Value.Year, d.Value.Month, 1) : DateTime.MinValue,
+                        "yearly" => d => d.HasValue ? new DateTime(d.Value.Year, 1, 1) : DateTime.MinValue,
+                        _ => throw new ArgumentException("Invalid period")
+                    };
+
+                    var allPeriods = new HashSet<DateTime>();
+
+                    var userPeriods = users.AsEnumerable()
+                        .Select(u => keySelector(u.CreatedAt))
+                        .Where(d => d != DateTime.MinValue)
+                        .Distinct()
+                        .ToList();
+
+                    var planPeriods = planPurchases.AsEnumerable()
+                        .Select(p => keySelector(p.PurchasedAt))
+                        .Where(d => d != DateTime.MinValue)
+                        .Distinct()
+                        .ToList();
+
+                    var transPeriods = walletTransactions.AsEnumerable()
+                        .Select(t => keySelector(t.CreatedAt))
+                        .Where(d => d != DateTime.MinValue)
+                        .Distinct()
+                        .ToList();
+
+                    foreach (var p in userPeriods.Concat(planPeriods).Concat(transPeriods))
+                        allPeriods.Add(p);
+
+                    var stats = new List<DashboardStatsDTO>();
+
+                    foreach (var periodDate in allPeriods.OrderBy(d => d))
+                    {
+                        var newUsers = users.AsEnumerable()
+                            .Count(u => keySelector(u.CreatedAt) == periodDate);
+
+                        var activeFromTransactions = walletTransactions.AsEnumerable()
+                            .Where(t => keySelector(t.CreatedAt) == periodDate)
+                            .Select(t => t.Wallet.User.Id)
+                            .Distinct()
+                            .ToList();
+
+                        var activeFromPlans = planPurchases.AsEnumerable()
+                            .Where(p => keySelector(p.PurchasedAt) == periodDate)
+                            .Select(p => p.UserId)
+                            .Distinct()
+                            .ToList();
+
+                        var activeUsers = activeFromTransactions
+                            .Union(activeFromPlans)
+                            .Distinct()
+                            .Count();
+
+                        var planCount = planPurchases.AsEnumerable()
+                            .Count(p => keySelector(p.PurchasedAt) == periodDate);
+
+                        var plans = planPurchases.AsEnumerable()
+                            .Where(p => keySelector(p.PurchasedAt) == periodDate)
+                            .GroupBy(p => p.Plan.Name)
+                            .Select(g => new { g.Key, Count = g.Count() })
+                            .ToList();
+
+                        var totalTopUp = walletTransactions.AsEnumerable()
+                            .Where(t => keySelector(t.CreatedAt) == periodDate &&
+                                        (t.Type == TransactionTypes.Deposit || t.Type == TransactionTypes.TopUp))
+                            .Sum(t => (decimal?)t.Amount) ?? 0;
+
+                        var totalPlanRevenue = planPurchases.AsEnumerable()
+                            .Where(p => keySelector(p.PurchasedAt) == periodDate)
+                            .Sum(p => (decimal?)p.Price) ?? 0;
+
+                        var totalRevenue = totalTopUp + totalPlanRevenue;
+
+                        var stat = new DashboardStatsDTO
+                        {
+                            Period = periodDate,
+                            NewUsers = newUsers,
+                            ActiveUsers = activeUsers,
+                            PlanPurchases = planCount,
+                            TotalTopUp = totalTopUp,
+                            TotalPlanRevenue = totalPlanRevenue,
+                            TotalRevenue = totalRevenue
+                        };
+
+                        foreach (var p in plans)
+                            stat.PlansBought[p.Key] = p.Count;
+
+                        stats.Add(stat);
+                    }
+
+                    return stats;
+                }
 
                 var dashboard = new DashboardOverviewDTO
                 {
-                    TotalUsersByRole = totalUsersByRole,
-                    TotalCards = totalCards,
-                    TotalAssets = totalAssets,
-                    TotalSavedCards = totalSavedCards,
-                    TotalRevenue = totalRevenue
+                    DailyStats = await Task.Run(() => BuildStats("daily")),
+                    MonthlyStats = await Task.Run(() => BuildStats("monthly")),
+                    YearlyStats = await Task.Run(() => BuildStats("yearly"))
                 };
 
                 res.IsSucess = true;

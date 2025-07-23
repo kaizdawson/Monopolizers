@@ -8,10 +8,8 @@ namespace Monopolizers.Common.DTO
 {
     public class DashboardOverviewDTO
     {
-        public Dictionary<string, int> TotalUsersByRole { get; set; } = new();
-        public int TotalCards { get; set; }
-        public int TotalAssets { get; set; }
-        public int TotalSavedCards { get; set; }
-        public decimal TotalRevenue { get; set; }
+        public List<DashboardStatsDTO> DailyStats { get; set; } = new();
+        public List<DashboardStatsDTO> MonthlyStats { get; set; } = new();
+        public List<DashboardStatsDTO> YearlyStats { get; set; } = new();
     }
 }

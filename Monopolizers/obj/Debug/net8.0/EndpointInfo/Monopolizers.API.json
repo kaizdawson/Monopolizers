@@ -995,25 +995,6 @@
         "tags": [
           "PayOSWebhook"
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/PayOSWebhookDTO"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/PayOSWebhookDTO"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/PayOSWebhookDTO"
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "OK"
@@ -1756,36 +1737,6 @@
           "email": {
             "type": "string",
             "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "PayOSWebhookDTO": {
-        "type": "object",
-        "properties": {
-          "orderCode": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "amount": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "description": {
-            "type": "string",
-            "nullable": true
-          },
-          "status": {
-            "type": "string",
-            "nullable": true
-          },
-          "transactionId": {
-            "type": "string",
-            "nullable": true
-          },
-          "time": {
-            "type": "integer",
-            "format": "int64"
           }
         },
         "additionalProperties": false

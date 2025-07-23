@@ -12,10 +12,18 @@ namespace Monopolizers.Repository.Implementation
     {
         private readonly CardARContext _context;
 
+        public IGenericRepository<PlanPurchase> PlanPurchaseRepository { get; }
+        public IGenericRepository<WalletTransaction> WalletTransactionRepository { get; }
+
         public UnitOfWork(CardARContext context)
         {
             _context = context;
+            PlanPurchaseRepository = new GenericRepository<PlanPurchase>(_context);
+            WalletTransactionRepository = new GenericRepository<WalletTransaction>(_context);
         }
+
+
+
         public async Task<int> SaveChangeAsync()
         {
             return await _context.SaveChangesAsync();

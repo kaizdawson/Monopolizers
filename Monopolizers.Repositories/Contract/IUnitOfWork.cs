@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Monopolizers.Repository.DB;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,8 @@ namespace Monopolizers.Repository.Contract
 {
     public interface IUnitOfWork
     {
+        IGenericRepository<PlanPurchase> PlanPurchaseRepository { get; }
+        IGenericRepository<WalletTransaction> WalletTransactionRepository { get; }
         public Task<int> SaveChangeAsync();
     }
 }
