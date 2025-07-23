@@ -162,10 +162,12 @@ builder.Services.AddCors(options =>
     });
     options.AddPolicy("AllowVercel", policy =>
     {
-        policy.WithOrigins("https://monopolizers.vercel.app")
-              .AllowAnyHeader()
-              .AllowAnyMethod()
-              .AllowCredentials(); 
+        policy.WithOrigins(
+       "https://monopolizers.vercel.app",
+       "http://localhost:5173")
+   .AllowAnyHeader()
+   .AllowAnyMethod()
+   .AllowCredentials();
     });
 });
 
