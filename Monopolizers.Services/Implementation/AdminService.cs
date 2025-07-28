@@ -149,41 +149,28 @@ namespace Monopolizers.Service.Implementation
                             .Distinct()
                             .Count();
 
-                        var planCount = planPurchases.AsEnumerable()
-                            .Count(p => keySelector(p.PurchasedAt) == periodDate);
-
-                        var plans = planPurchases.AsEnumerable()
-                            .Where(p => keySelector(p.PurchasedAt) == periodDate)
-                            .GroupBy(p => p.Plan.Name)
-                            .Select(g => new { g.Key, Count = g.Count() })
-                            .ToList();
-
                         var totalTopUp = walletTransactions.AsEnumerable()
                             .Where(t => keySelector(t.CreatedAt) == periodDate &&
                                         (t.Type == TransactionTypes.Deposit || t.Type == TransactionTypes.TopUp))
                             .Sum(t => (decimal?)t.Amount) ?? 0;
 
-                        var totalPlanRevenue = planPurchases.AsEnumerable()
-                            .Where(p => keySelector(p.PurchasedAt) == periodDate)
-                            .Sum(p => (decimal?)p.Price) ?? 0;
+                        var premiumCount = planPurchases.AsEnumerable()
+                            .Count(p => keySelector(p.PurchasedAt) == periodDate &&
+                                        p.Plan.AccessLevel.Equals("Premium", StringComparison.OrdinalIgnoreCase));
 
-                        var totalRevenue = totalTopUp + totalPlanRevenue;
+                        var vipCount = planPurchases.AsEnumerable()
+                            .Count(p => keySelector(p.PurchasedAt) == periodDate &&
+                                        p.Plan.AccessLevel.Equals("VIP", StringComparison.OrdinalIgnoreCase));
 
-                        var stat = new DashboardStatsDTO
+                        stats.Add(new DashboardStatsDTO
                         {
                             Period = periodDate,
                             NewUsers = newUsers,
                             ActiveUsers = activeUsers,
-                            PlanPurchases = planCount,
                             TotalTopUp = totalTopUp,
-                            TotalPlanRevenue = totalPlanRevenue,
-                            TotalRevenue = totalRevenue
-                        };
-
-                        foreach (var p in plans)
-                            stat.PlansBought[p.Key] = p.Count;
-
-                        stats.Add(stat);
+                            PremiumPlans = premiumCount,
+                            VipPlans = vipCount
+                        });
                     }
 
                     return stats;
